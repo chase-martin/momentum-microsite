@@ -1,0 +1,333 @@
+@include respond("min-width: 960px") {
+	body #container #main {
+		.pager {
+		  height: 100%;
+			width: 100%;
+		  .wrap {
+		  	overflow:hidden;
+		  	width:1024px;
+		  	height:800px;
+		  	position: relative;
+				.pages {
+			    height: 800px;
+			    width: 300%;
+			    position: absolute;
+			    top:0;
+			    left:0;
+			    .page {
+				    height: auto;
+				    width: auto;
+				    float: left;
+					}
+				}
+			}
+			div.paging {
+		    cursor: pointer;
+		    display: block;
+		    margin: -50px 0 0 0;
+		    position: absolute;
+				@include border-radius(50px);
+				@include box-shadow(0px 2px 4px #d9d9d9);
+				height: 100px;
+				width: 100px;
+				line-height: 100px;
+				font-size: 80px;
+		    top: 50%;
+
+		    &.dark {
+		    	@include box-shadow(0px 2px 4px rgba(255,255,255,.2));
+		    	background-color: rgba(255,255,255,.2);
+		    }
+		    span {
+		    	color: #d9d9d9;
+					display: block;
+					@include mp-bold;
+					@include font-size(80px);
+				}
+		    &.left {
+		    	left: -50px;
+			  	span {
+			  		margin: -8px 0px 0 55px;
+			  	}
+			  }
+				&.right {
+					right: -50px;
+				  span {
+				  	margin-left:-25%;
+				  	margin: -8px 0 0 15px;
+						vertical-align: top;
+				  }
+				}
+				
+			}
+			.navdots {
+				position: absolute;
+				bottom: 100px;
+				margin:0 auto;
+				z-index: 1000;
+				width: auto;
+				height: 10px;
+				.navdot {
+					display: block;
+					float: left;
+					margin-right: 10px;
+					width: 10px;
+					height: 10px;
+					border-radius: 5px;
+					background-color: #cccccc;
+					&:hover {
+						background-color:#2496fd;
+					}
+					&.active {
+						background-color: #2496fd;
+					}
+				}
+			}
+		}
+		.container.one {
+			.navdots {
+				bottom: auto;
+				top: 50px;
+				left: auto;
+				right: 110px;
+			}
+		}
+		.container.faq {
+			.pager {
+				overflow:visible;
+				.navdots {
+					bottom: auto;
+					top: 120px;
+					right: 155px;
+				}
+			}
+			
+		}
+	}
+}
+
+
+@include respond("max-width: 960px") {
+	body #container #main {
+		.pager {
+		  height: 100%;
+			width: 100%;
+		  //overflow: hidden;
+		  //position: relative;
+		  .wrap {
+		  	overflow:hidden;
+		  	width:960px !important;
+		  	max-width:960px;
+		  	height:800px;
+		  	position: relative;
+				.pages {
+			    height: 800px;
+			    //width: 1757px;
+			    width: 300%;
+			    position: absolute;
+			    top:0;
+			    left:0;
+			    .page {
+				    height: auto;
+				    width: auto;
+				    width:960px;
+				    float: left;
+					}
+				}
+			}
+			div.paging {
+		    cursor: pointer;
+		    display: block;
+		    margin: -50px 0 0 0;
+		    position: absolute;
+				@include border-radius(50px);
+				@include box-shadow(0px 2px 4px #d9d9d9);
+				height: 100px;
+				width: 100px;
+				line-height: 100px;
+				font-size: 80px;
+		    top: 50%;
+
+		    &.dark {
+		    	@include box-shadow(0px 2px 4px rgba(255,255,255,.2));
+		    	background-color: rgba(255,255,255,.2);
+		    }
+		    span {
+		    	color: #d9d9d9;
+					display: block;
+					@include mp-bold;
+					@include font-size(80px);
+				}
+		    &.left {
+		    	left: -50px;
+			  	span {
+			  		margin: -8px 0px 0 55px;
+			  	}
+			  }
+				&.right {
+					right: -50px;
+				  span {
+				  	margin-left:-25%;
+				  	margin: -8px 0 0 15px;
+						vertical-align: top;
+				  }
+				}
+				
+			}
+			.navdots {
+				position: absolute;
+				bottom: 100px;
+				margin:0 auto;
+				z-index: 1000;
+				width: auto;
+				height: 10px;
+				.navdot {
+					display: block;
+					float: left;
+					margin-right: 10px;
+					width: 10px;
+					height: 10px;
+					border-radius: 5px;
+					background-color: #cccccc;
+					&:hover {
+						background-color:#2496fd;
+					}
+					&.active {
+						background-color: #2496fd;
+					}
+				}
+			}
+		}
+		.container.one {
+			.navdots {
+				bottom: auto;
+				top: 50px;
+				left: auto;
+				right: 110px;
+			}
+		}
+		.container.faq {
+			.pager {
+				overflow:visible;
+				.navdots {
+					bottom: auto;
+					top: 120px;
+					right: 155px;
+				}
+			}
+			
+		}
+	}
+}
+
+@include respond("max-width: 768px") {
+	body #container #main {
+		.pager {
+		  height: 100%;
+			width: 100%;
+		  .wrap {
+		  	overflow:hidden;
+		  	width:480px !important;
+		  	max-width:480px;
+		  	height:800px;
+		  	position: relative;
+				.pages {
+			    height: 800px;
+			    width: 300%;
+			    position: absolute;
+			    top:0;
+			    left:0;
+			    .page {
+				    height: auto;
+				    width: auto;
+				    float: left;
+					}
+				}
+			}
+			div.paging {
+		    cursor: pointer;
+		    display: none !important;
+		    margin: -50px 0 0 0;
+		    position: absolute;
+				@include border-radius(50px);
+				@include box-shadow(0px 2px 4px #d9d9d9);
+				height: 100px;
+				width: 100px;
+				line-height: 100px;
+				font-size: 80px;
+		    top: 50%;
+
+		    &.dark {
+		    	@include box-shadow(0px 2px 4px rgba(255,255,255,.2));
+		    	background-color: rgba(255,255,255,.2);
+		    }
+		    span {
+		    	color: #d9d9d9;
+					display: block;
+					@include mp-bold;
+					@include font-size(80px);
+				}
+		    &.left {
+		    	left: -50px;
+			  	span {
+			  		margin: -8px 0px 0 55px;
+			  	}
+			  }
+				&.right {
+					right: -50px;
+				  span {
+				  	margin-left:-25%;
+				  	margin: -8px 0 0 15px;
+						vertical-align: top;
+				  }
+				}
+				
+			}
+			.navdots {
+				position: absolute;
+				bottom: 100px;
+				margin:0 auto;
+				z-index: 1000;
+				width: auto;
+				height: 10px;
+				.navdot {
+					display: block;
+					float: left;
+					margin-right: 10px;
+					width: 10px;
+					height: 10px;
+					border-radius: 5px;
+					background-color: #cccccc;
+					&:hover {
+						background-color:#2496fd;
+					}
+					&.active {
+						background-color: #2496fd;
+					}
+				}
+			}
+		}
+		.container.one {
+			.navdots {
+				bottom: auto;
+				top: auto;
+				bottom:50px;
+				left: auto;
+				right: auto;
+			}
+		}
+		.container.faq {
+			.pager {
+				overflow:visible;
+				.navdots {
+					bottom: auto;
+					top: 120px;
+					right: 155px;
+				}
+			}
+			
+		}
+	}
+}
+	
+

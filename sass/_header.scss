@@ -1,0 +1,544 @@
+@include respond("min-width: 960px") {
+	#main_header {
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		z-index:10002;
+		.header {
+			width: 100%;
+			height: 50px;
+			background-color: #1b49a0;
+			border-bottom: 2px solid #1e70bd;
+			box-sizing: border-box;
+			position: relative;
+			div.logo {
+				float:left;
+				margin:12px 0 8px 90px;
+				img {
+					width: 276px;
+					height: auto;
+					max-width: 138px;
+				}
+			}
+			nav {
+				#main_nav {
+					height: auto;
+					float: left;
+					width: 100px;
+					padding: 0;
+					margin: 0;
+					position: absolute;
+					top:50px;
+					z-index: 2;
+					
+					.trigram {
+						display: block;
+						position: absolute;
+						top:-42px;
+						left: 4px;
+						width: 40px;
+						height: 40px;
+						margin: 8px 0 0 4px;
+						padding: 0;
+						text-align: center;
+						span {
+							display: block;
+							float: left;
+							background-color: #0a2460;
+							width: 25px;
+							height: 25px;
+							line-height: 25px;
+							color: #276cbd;
+							cursor: pointer;
+							@include clearfix();
+						}
+					}
+					&:hover .trigram span,
+					.trigram.active span {
+						background-color: #ffcc3c;
+					}
+					&:hover {
+						width: 100%;
+					}
+					.shadowrap {
+						width: 100%;
+						height: auto;
+						padding-bottom: 20px;
+						float: left;
+						overflow: hidden;
+						ul.main_nav {
+							background-color: #1b49a0;
+							display: none;
+							float:left;
+							height: auto;
+							width: 100%;
+							margin:1px 0 0 0;
+							padding: 20px 20px 30px;
+							@include clearfix();
+							@include box-shadow(0 5px 5px 5px rgba(0,0,0,0.38));
+							li {
+								float: left;
+								clear: left;
+								display: block;
+								a {
+									@include mp-bold;
+									@include font-size(14px);
+									color: #fff;
+									&:hover, &:active {
+										color: #ffcc3c;
+									}
+								}
+								&.active a {
+									color: #ffcc3c;
+								}
+							}
+						}
+					}
+					&:hover .shadowrap ul.main_nav, &:hover .sharebar {
+						display: block;
+					}
+				}
+			}
+		}
+		.header {
+			width: 100%;
+			float: left;
+			div.logo {
+				float:left;
+				margin:25px 0 8px 30px;
+				img {
+					max-width: 276px;
+				}
+			}
+			nav {
+				#main_nav {
+					float: left;
+					position: static;
+					top: auto;
+					margin-top: 0px;
+					height: auto;
+					width: 100%;
+					.sharebar {
+						display: block;
+						position: absolute;
+						top: 684px;
+						left: 0;
+						height: 35px;
+						width: 122px;
+						.hashtag {
+
+						}
+					}
+					.trigram {
+						display: none;
+					}
+					&:hover .trigram span,
+					.trigram.active span {
+						display: none;
+					}
+					&:hover .shadowrap ul.main_nav, &:hover .sharebar {
+						display: block;
+					}
+					&:hover .trigram span,
+					&:hover {
+						width: 100%;;
+					}
+					.shadowrap {
+						width: 100%;
+						height: auto;
+						padding: 0;
+						float: left;
+						overflow: hidden;
+						ul.main_nav {
+							position: relative;
+							display: block;
+							width: 100%;
+							float: left;
+							padding: 0;
+							background-color: transparent;
+							@include box-shadow(none);
+							li {
+								float: left;
+								clear: none;
+								padding:0 0 0 10px;
+								&:first-child {
+									padding-left: 30px;
+								}
+								a {
+									@include mp-medium;
+									@include font-size(12px);
+									&:hover, &:active {
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		position: absolute;
+		top: 0;
+		background-color: #1b49a0;
+		border-bottom: 2px solid #1e70bd;
+		height: 100px;
+		padding:0;
+		margin:0;
+		max-width: 1280px;
+		margin:0 auto;
+		//box-sizing: border-box;
+		&.float {
+			top:-100px;
+		}
+		.header {
+			height: 100%;
+			max-height:100px;
+			background-color: none;
+			border-bottom: none;
+			max-width: 1024px;
+			margin: 0 auto;
+			float: none;
+			div.logo {
+				img {
+					height: 60px;
+					width: auto;
+					margin-top:0px;
+				}
+			}
+			nav {
+				#main_nav {
+					float: right;
+					width: auto;
+					margin: 60px 0 0 50px;
+					.trigram {
+						span {
+
+						}
+					}
+					&:hover .trigram span,
+					.trigram.active span {
+
+					}
+					&:hover .trigram span,
+					.trigram.active span {
+						display: none;
+					}
+					&:hover .shadowrap ul.main_nav, &:hover .sharebar {
+						display: block;
+					}
+					&:hover .trigram span,
+					&:hover {
+						width: auto;;
+					}
+					.shadowrap {
+						ul.main_nav {
+							float: left;
+							li {
+								padding-left: 20px;
+								&:first-child {
+									padding-left: 0;
+								}
+								a {
+									&:hover, &:active {
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond("max-width: 960px") {
+	#main_header {
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		z-index: 10002;
+		height:150px !important;
+
+		.header {
+			width: 100%;
+			height: 150px !important;
+			background-color: #1b49a0;
+			border-bottom: 2px solid #1e70bd;
+			box-sizing: border-box;
+			position: relative;
+			div.logo {
+				float:left;
+				margin:12px 0 8px 32px;
+				img {
+					width: 276px;
+					height: auto;
+				}
+			}
+			div.logo {
+				float:left;
+				margin:25px 0 8px 30px;
+				img {
+					max-width: 276px;
+				}
+			}
+			nav {
+				
+				#main_nav {
+					height: auto;
+					padding: 0;
+					position: absolute;
+					top:50px;
+					z-index: 2;
+					float: right;
+					width: auto;
+					margin: 60px 0 0 50px;
+					
+					.trigram {
+						display: block;
+						position: absolute;
+						top:-42px;
+						left: 4px;
+						width: 40px;
+						height: 40px;
+						margin: 8px 0 0 4px;
+						padding: 0;
+						text-align: center;
+						span {
+							display: block;
+							float: left;
+							background-color: #0a2460;
+							width: 25px;
+							height: 25px;
+							line-height: 25px;
+							color: #276cbd;
+							cursor: pointer;
+							@include clearfix();
+						}
+					&:hover .trigram span,
+						.trigram.active span {
+							display: none;
+						}
+					}
+					&:hover {
+						width: auto;
+					}
+					.shadowrap {
+						width: 100%;
+						height: auto;
+						padding-bottom: 20px;
+						float: left;
+						overflow: hidden;
+						ul.main_nav {
+							background-color: #1b49a0;
+							display: none;
+							float:left;
+							height: auto;
+							width: 100%;
+							margin:1px 0 0 0;
+							padding: 20px 20px 30px;
+							@include clearfix();
+							@include box-shadow(0 5px 5px 5px rgba(0,0,0,0.38));
+							li {
+								float: left;
+								clear: left;
+								display: block;
+								&:first-child {
+									padding-left: 0;
+								}
+								a {
+									@include mp-bold;
+									@include font-size(14px);
+									color: #fff;
+									&:hover, &:active {
+										color: #ffcc3c;
+									}
+								}
+								&.active a {
+									color: #ffcc3c;
+								}
+							}
+						}
+					}
+					&:hover .shadowrap ul.main_nav, &:hover .sharebar {
+						display: block;
+					}
+				}
+
+				#main_nav {
+					float: left;
+					position: static;
+					top: auto;
+					margin-top: 0px;
+					height: auto;
+					width: 100%;
+					.sharebar {
+						display: block;
+						position: absolute;
+						top: 684px;
+						left: 0;
+						height: 35px;
+						width: 122px;
+						.hashtag {
+
+						}
+					}
+					.trigram {
+						display: none;
+					}
+					&:hover .trigram span,
+					.trigram.active span {
+						display: none;
+					}
+					&:hover .shadowrap ul.main_nav, &:hover .sharebar {
+						display: block;
+					}
+					&:hover .trigram span,
+					&:hover {
+						width: 100%;;
+					}
+					.shadowrap {
+						width: 100%;
+						height: auto;
+						padding: 0;
+						float: left;
+						overflow: hidden;
+						ul.main_nav {
+							position: relative;
+							display: block;
+							width: 100%;
+							float: left;
+							padding: 0;
+							background-color: transparent;
+							@include box-shadow(none);
+							li {
+								float: left;
+								clear: none;
+								padding:0 0 0 10px;
+								&:first-child {
+									padding-left: 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@include respond("max-width: 768px") {
+	#main_header {
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		z-index: 10002;
+		height:54px !important;
+
+		.header {
+			width: 480px;
+			height: 54px !important;
+			background-color: #1b49a0;
+			border-bottom: 2px solid #1e70bd;
+			box-sizing: border-box;
+			position: relative;
+			div.logo {
+				float:left;
+				margin:12px 0 8px 90px;
+				img {
+					width: 276px;
+					height: auto;
+					max-width: 138px;
+				}
+			}
+			nav {
+				#main_nav {
+					height: 100px;
+					float: left;
+					width: 100px;
+					padding: 0;
+					margin: 0;
+					position: absolute;
+					top:50px;
+					z-index: 2;
+					
+					.trigram {
+						display: block;
+						position: absolute;
+						top:-42px;
+						left: 4px;
+						width: 40px;
+						height: 40px;
+						margin: 8px 0 0 4px;
+						padding: 0;
+						text-align: center;
+						span {
+							display: block;
+							float: left;
+							background-color: #0a2460;
+							width: 25px;
+							height: 25px;
+							line-height: 25px;
+							color: #276cbd;
+							cursor: pointer;
+							@include clearfix();
+						}
+					}
+					&:hover .trigram span,
+					.trigram.active span {
+						background-color: #ffcc3c;
+					}
+					&:hover {
+						width: 100%;
+					}
+					.shadowrap {
+						width: 100%;
+						height: auto;
+						padding-bottom: 20px;
+						float: left;
+						overflow: hidden;
+						ul.main_nav {
+							background-color: #1b49a0;
+							display: none;
+							float:left;
+							height: auto;
+							width: 100%;
+							margin:1px 0 0 0;
+							padding: 20px 20px 30px;
+							@include clearfix();
+							@include box-shadow(0 5px 5px 5px rgba(0,0,0,0.38));
+							li {
+								float: left;
+								clear: left;
+								display: block;
+								&:first-child {
+									padding-left: 10px;
+								}
+								a {
+									@include mp-bold;
+									@include font-size(14px);
+									cursor:pointer;
+									color: #fff;
+									&:hover, &:active {
+										color: #ffcc3c;
+									}
+								}
+								&.active a {
+									color: #ffcc3c;
+								}
+							}
+						}
+					}
+					&:hover .shadowrap ul.main_nav, &:hover .sharebar {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+

@@ -1,0 +1,94 @@
+/* Fonts */
+
+// Set local icon font
+@font-face {
+  font-family: '#{$icons}';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/icons/#{$icons}.eot);
+  src: url('../fonts/icons/#{$icons}.eot?#iefix') format('ie9-skip-eot'),
+       url('../fonts/icons/#{$icons}.woff') format('woff'),
+       url('../fonts/icons/#{$icons}.ttf')  format('truetype');
+}
+
+// To include your own, local copies of fonts, use the following template
+//
+//@font-face {
+//  font-family: '#{$some-font-variable}';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: url(../fonts/icons/#{$some-font-variable}.eot);
+//  src: url('../fonts/icons/#{$some-font-variable}.eot?#iefix') format('ie9-skip-eot'),
+//       url('../fonts/icons/#{$some-font-variable}.woff') format('woff'),
+//       url('../fonts/icons/#{$some-font-variable}.ttf')  format('truetype');
+//}
+
+// Default font
+@mixin mp-regular {
+    font-family: "mavenproregular-webfont";
+}
+// default "light" version
+@mixin mp-light {
+    font-family: "mavenprolight-200-webfont";
+}
+@mixin mp-light100 {
+    font-family: "mavenprolight-100-webfont";
+}
+@mixin mp-light200 {
+    font-family: "mavenprolight-200-webfont";
+}
+@mixin mp-light300 {
+    font-family: "mavenprolight-300-webfont";
+}
+@mixin mp-medium {
+    font-family: "mavenpromedium-webfont";
+}
+@mixin mp-bold {
+    font-family: "mavenproregular-webfont";
+}
+@mixin mp-black{
+    font-family: "mavenproblack-webfont";
+}
+
+
+@font-face {
+    font-family: "mavenproblack-webfont";
+    src: url("../fonts/mavenproblack-webfont.eot");
+    src: url("../fonts/mavenproblack-webfont.woff") format("woff"), url("../fonts/mavenproblack-webfont.ttf") format("truetype"), url("../fonts/mavenproblack-webfont.svg") format("svg");
+    font-style: normal;
+}
+@font-face {
+    font-family: "temp-mavenpro-bold-webfont";
+    src: url("../fonts/mavenpro-bold-webfont.eot");
+    src: url("../fonts/mavenpro-bold-webfont.woff") format("woff"), url("../fonts/mavenpro-bold-webfont.ttf") format("truetype"), url("../fonts/mavenpro-bold-webfont.svg") format("svg");
+    font-style: normal;
+}
+@font-face {
+    font-family: "mavenpromedium-webfont";
+    src: url("../fonts/mavenpromedium-webfont.eot");
+    src: url("../fonts/mavenpromedium-webfont.woff") format("woff"), url("../fonts/mavenpromedium-webfont.ttf") format("truetype"), url("../fonts/mavenpromedium-webfont.svg") format("svg");
+    font-style: normal;
+}
+@font-face {
+    font-family: "mavenproregular-webfont";
+    src: url("../fonts/mavenproregular-webfont.eot");
+    src: url("../fonts/mavenproregular-webfont.woff") format("woff"), url("../fonts/mavenproregular-webfont.ttf") format("truetype"), url("../fonts/mavenproregular-webfont.svg") format("svg");
+    font-style: normal;
+}
+@font-face {
+    font-family: "mavenprolight-200-webfont";
+    src: url("../fonts/mavenprolight-200-webfont.eot");
+    src: url("../fonts/mavenprolight-200-webfont.woff") format("woff"), url("../fonts/mavenprolight-200-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-200-webfont.svg") format("svg");
+    font-style: normal;
+}
+@font-face {
+    font-family: "mavenprolight-100-webfont";
+    src: url("../fonts/mavenprolight-100-webfont.eot");
+    src: url("../fonts/mavenprolight-100-webfont.woff") format("woff"), url("../fonts/mavenprolight-100-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-100-webfont.svg") format("svg");
+    font-style: normal;
+}
+@font-face {
+    font-family: "mavenprolight-300-webfont";
+    src: url("../fonts/mavenprolight-300-webfont.eot");
+    src: url("../fonts/mavenprolight-300-webfont.woff") format("woff"), url("../fonts/mavenprolight-300-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-300-webfont.svg") format("svg");
+}

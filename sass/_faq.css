@@ -1,0 +1,10 @@
+body #container #main section#faq {
+  background: white url(../img/connected-bg.jpg) no-repeat top center; }
+  body #container #main section#faq .container {
+    width: 1024px;
+    height: 900px;
+    padding: 100px 50px 50px; }
+    body #container #main section#faq .container .article.first {
+      margin-bottom: 100px; }
+    body #container #main section#faq .container p {
+      color: #fff; }

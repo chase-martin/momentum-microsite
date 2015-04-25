@@ -1,0 +1,366 @@
+@include respond("min-width: 960px") {
+#container {
+	section.splash {
+		height: 861px !important;
+		#splash {
+			top:100px;
+			height:861px;
+			width: 1280px;
+			margin:0 auto;
+			position: relative;
+			.header {
+				width:900px;
+				margin:0 auto;
+				position: relative;
+				z-index:1;
+				background: transparent url(../img/splash-middle-bg.png) no-repeat 0 0;
+				background-position: 50% 300px;
+			}
+			.middle {
+				width: 280px;
+				height:210px;
+				margin: 0 auto;
+				position: relative;
+				z-index: 1;
+				background: transparent url(../img/splash-middle-bg.png) no-repeat 0 0;
+				background-position: 50% 0;
+				h6 {
+					line-height: 210px;
+				}
+			}
+			
+			.splash {
+				position:absolute;
+				top:0px;
+				width: 640px;
+				height: 761px;
+				z-index:0;
+			}
+			.splash.sf {
+				left:0;
+				float:left;
+				background: #376699 url(../img/splash-sf-bg2.png) no-repeat 0 0;
+			}
+			.splash.ldn {
+				right:0;
+				float:right;
+				background: #376699 url(../img/splash-ldn-bg2.png) no-repeat 0 0;
+				background-size: 640px 761px;
+			}
+			.pane {
+				cursor: pointer;
+				position: absolute;
+				bottom: 70px;
+				height: auto;
+				width: 350px;
+				text-align: left;
+				left: 200px;
+				a {
+					width: 100%;
+					height: 100%;
+					display: block;
+					padding: 200px 0 0 0;
+				}
+				
+				//background: transparent url(../img/splash-circle-bg.png) no-repeat 0 0;
+			}
+			.pane.ldn {
+				left: 80px;
+			}
+			h1 {
+				display: block;
+				padding: 40px 0 40px;
+				line-height: 1;
+				text-transform: uppercase;
+				color: #fff;
+				text-align: center;
+				@include mp-light200;
+				@include font-size(62px);
+			}
+			h1, h5, h6 {
+				text-transform: uppercase;
+			}
+			h5 {
+				text-align: left;
+				color: #fff;
+				line-height: 25px;	
+				margin-bottom:20px;		
+				@include mp-bold;
+				@include font-size(22px);
+				span {
+					color: #febf00;
+					padding: 0 10px;
+				}
+			}
+			h6 {
+				color: #ffcc33;
+				text-align: center;
+				@include mp-bold;
+				@include font-size(14px);
+			}
+			p {
+				@include mp-regular;
+				@include font-size(20px);
+				font-weight: 400px;
+				line-height: 1.25;
+				color: #fff;
+			}
+		}
+	}		
+}
+}
+
+@include respond("max-width: 960px") {
+	#container {
+		section.splash {
+			header {
+				#main_header {
+					height:100px !important;
+					max-height:100px;
+					.header {
+						height:100px !important;
+						div.logo {
+							margin: 25px auto 0;
+							width:100%;
+							text-align:center;
+						}
+					}
+				}
+			}
+			#splash {
+				top:100px;
+				height:861px;
+				width: 960px;
+				margin:0 auto;
+				position: relative;
+				.header {
+					height:150px;
+					width:900px;
+					margin:0 auto;
+					position: relative;
+					z-index:1;
+					background: transparent url(../img/splash-middle-bg.png) no-repeat 0 0;
+					background-position: 50% 300px;
+				}
+				.middle {
+					width: 280px;
+					height:210px;
+					margin: 140px auto 0;
+					position: relative;
+					z-index: 1;
+					background: transparent url(../img/splash-middle-bg.png) no-repeat 0 0;
+					background-position: 50% 0;
+
+					h6 {
+						line-height: 210px;
+						span {display:block;}
+					}
+				}
+				.splash {
+					position:absolute;
+					top:0px;
+					width: 484px;
+					height: 761px;
+					z-index:0;
+				}
+				.splash.sf {
+					left:0;
+					float:left;
+					background: #376699 url(../img/splash-sf-bg2.png) no-repeat -142px 0;
+				}
+				.splash.ldn {
+					right:0;
+					float:right;
+					background: #376699 url(../img/splash-ldn-bg2.png) no-repeat -42px 0;
+				}
+				.pane {
+					cursor: pointer;
+					position: absolute;
+					bottom: 70px;
+					height: auto;
+					width: 350px;
+					text-align: left;
+					left: 100px;
+					a {
+						width: 100%;
+						height: 100%;
+						display: block;
+						padding: 200px 0 0 0;
+					}
+				}
+				.pane.ldn {
+					left: 80px;
+				}
+				h1 {
+					display: block;
+					padding: 40px 0 40px;
+					line-height: 1;
+					text-transform: uppercase;
+					color: #fff;
+					text-align: center;
+					@include mp-light200;
+					@include font-size(62px);
+				}
+				h1, h5, h6 {
+					text-transform: uppercase;
+				}
+				h5 {
+					text-align: left;
+					color: #fff;
+					line-height: 25px;	
+					margin-bottom:20px;		
+					@include mp-bold;
+					@include font-size(22px);
+					span {
+						color: #febf00;
+						padding: 0 10px;
+					}
+				}
+				h6 {
+					color: #ffcc33;
+					text-align: center;
+					@include mp-bold;
+					@include font-size(14px);
+				}
+				p {
+					@include mp-regular;
+					@include font-size(20px);
+					font-weight: 400px;
+					line-height: 1.25;
+					color: #fff;
+				}
+			}
+		}		
+	}
+}
+
+
+@include respond("max-width: 768px") {
+	#container {
+		height: 1400px;
+		width:480px;
+		section.splash {
+			header {
+				#main_header {
+					height:100px !important;
+					max-height:100px;
+					.header {
+						height:100px !important;
+						width:480px;
+						div.logo {
+							margin: 25px auto 0;
+							width:100%;
+							text-align:center;
+						}
+					}
+				}
+			}
+			#splash {
+				top:100px;
+				width:480px;
+				height:auto;
+				height:1400px;
+				margin:0 auto;
+				position: relative;
+				.header {
+					height:150px;
+					width:480px !important;
+					margin:0;
+					position: relative;
+					z-index:1;
+					background: transparent url(../img/splash-middle-bg.png) no-repeat 0 0;
+					background-position: 50% 300px;
+				}
+				.middle {
+					width: 280px;
+					height:210px;
+					margin: 140px 0 0;
+					position: relative;
+					z-index: 1;
+					background: transparent url(../img/splash-middle-bg.png) no-repeat 0 0;
+					background-position: 50% 0;
+					h1 {
+						@include font-size(48px);
+					}
+					h6 {
+						line-height: 210px;
+						span {display:block;}
+					}
+				}
+				.splash {
+					position:absolute;
+					top:0px;
+					width: 480px;
+					z-index:0;
+				}
+				.splash.sf {
+					left:0;
+					float:left;
+					background: #376699 url(../img/splash-sf-bg2.png) no-repeat -142px 0;
+				}
+				.splash.ldn {
+					left:0;
+					top:761px !important;
+					float:left;
+					background: #376699 url(../img/splash-ldn-bg2.png) no-repeat -42px 0;
+				}
+				.pane {
+					cursor: pointer;
+					position: absolute;
+					bottom: 70px;
+					height: auto;
+					width: 350px;
+					text-align: left;
+					left: 0;
+					a {
+						width: 100%;
+						height: 100%;
+						display: block;
+						padding: 200px 0 0 0;
+					}
+				}
+				.pane.ldn {
+					left: 0;
+				}
+				h1 {
+					display: block;
+					padding: 40px 0 40px;
+					line-height: 1;
+					text-transform: uppercase;
+					color: #fff;
+					text-align: center;
+					@include mp-light200;
+					@include font-size(62px);
+				}
+				h1, h5, h6 {
+					text-transform: uppercase;
+				}
+				h5 {
+					text-align: left;
+					color: #fff;
+					line-height: 25px;	
+					margin-bottom:20px;		
+					@include mp-bold;
+					@include font-size(22px);
+					span {
+						color: #febf00;
+						padding: 0 10px;
+					}
+				}
+				h6 {
+					color: #ffcc33;
+					text-align: center;
+					@include mp-bold;
+					@include font-size(14px);
+				}
+				p {
+					@include mp-regular;
+					@include font-size(20px);
+					font-weight: 400px;
+					line-height: 1.25;
+					color: #fff;
+				}
+			}
+		}		
+	}
+}

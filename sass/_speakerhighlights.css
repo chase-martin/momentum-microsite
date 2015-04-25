@@ -1,0 +1,6 @@
+body #container #main section#speakerhighlights {
+  background: white url(../img/connected-bg.jpg) no-repeat top center; }
+  body #container #main section#speakerhighlights .container {
+    width: 1024px;
+    height: 900px;
+    }

@@ -1,0 +1,169 @@
+
+@include respond("min-width: 960px") {
+	body {
+		width: 1280px;
+		margin:0 auto;
+		background: #555;
+		section {
+			min-width:1024px;
+		}
+		.anchor {
+			visibility: hidden;
+			height:100px;
+			margin-top:-100px;
+			float:left;
+		}
+		.section-anchor {
+			position: relative;
+		}
+		#container {
+			background: #555;
+			max-width: 1280px;
+			min-width:1024px;
+			margin: 0 auto;
+			position: relative;
+			section {
+				width: 100%;
+				height: 100%;
+				min-width:1024px;
+			}
+			#main {
+				section {
+					position: relative;
+					background-color: #fff;
+					width: 100%;
+					height: 100%;
+					margin: 0 auto;
+				}
+			}
+		}
+			#container {
+				section {
+					min-height: 480px;
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					background-color: #0e2950;
+				}
+				#main {
+					section {
+						background-color: #fff;
+					}
+				}
+			}
+			#container {
+				max-width: 1280px;
+				section.first {
+					height: 795px;
+					overflow: hidden;
+				}
+				#main {
+					background: #555;
+					section {
+						overflow: hidden;
+						max-width: 1280px;
+						min-width:1024px;
+						height: 900px;
+						margin: 0 auto;
+						.container {
+							padding: 50px 50px 50px;
+							height: 900px;
+							margin:0 auto;
+							.widebox {
+								width: 100%;
+								max-width: 940px;
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
+
+@include respond("max-width: 960px") {
+	body {
+		width: 100%;
+		max-width:968px;
+		min-width:480px;
+		margin:0 auto;
+		background: #555;
+		section {
+			max-width:968px;
+			min-width:480px;
+		}
+		.anchor {
+			visibility: hidden;
+			height:100px;
+			margin-top:-100px;
+			float:left;
+		}
+		.section-anchor {
+			position: relative;
+		}
+
+		#container {
+			max-width: 960px;
+			min-width: 480px;
+			section {
+				width: 100%;
+				height: 100%;
+				max-width: 960px;
+				min-width: 480px;
+			}
+			#main {
+				section {
+					overflow: hidden;
+					background-color: #fff;
+					max-width: 960px;
+					min-width: 480px;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+
+
+@include respond("max-width: 768px") {
+	body {
+		width: 100%;
+		max-width:480px;
+		min-width:480px;
+		margin:0 auto;
+		background: #555;
+		section {
+			max-width:480px;
+			min-width:480px;
+		}
+		.anchor {
+			visibility: hidden;
+			height:100px;
+			margin-top:-100px;
+			float:left;
+		}
+		.section-anchor {
+			position: relative;
+		}
+
+		#container {
+			max-width: 480px;
+			min-width: 480px;
+			height:960px;
+			section {
+				width: 100%;
+				height: 100%;
+				max-width: 480px;
+				min-width: 480px;
+			}
+			#main {
+				section {
+					overflow: hidden;
+					background-color: #fff;
+					max-width: 480px;
+					min-width: 480px;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}

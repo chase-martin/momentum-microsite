@@ -1,0 +1,1067 @@
+
+
+@include respond("min-width: 960px") {
+	div#hero {
+		margin-top:100px;
+		width:100%;
+		position: relative;
+		height:800px;
+		background-image: none !important;
+		.pager {
+		  height: 800px;
+			width: 100%;
+			max-width: 1280px;
+		  overflow: hidden;
+		  position: relative;
+		  margin:0 0 0 0;
+			.pages {
+		    height: auto;
+		    width: auto;
+		    position: absolute;
+		    top:0;
+		    left:0;
+		    .page {
+			    height: auto;
+			    width: auto;
+			    max-width: 1280px;
+			    float: left;
+				}
+			}
+			div.paging {
+		    cursor: pointer;
+		    display: block;
+		    margin: -100px 0 0 0;
+		    position: absolute;
+				@include border-radius(50px);
+				@include box-shadow(0px 2px 4px #d9d9d9);
+				height: 100px;
+				width: 100px;
+				line-height: 100px;
+				font-size: 80px;
+		    top: 50%;
+
+		    	@include box-shadow(0px 2px 4px rgba(255,255,255,.2));
+		    	background-color: rgba(255,255,255,.2);
+		    
+		    span {
+		    	color: rgba(255,255,255,.5);
+					display: block;
+					@include mp-bold;
+					@include font-size(80px);
+				}
+		    &.left {
+		    	left: -50px;
+			  	span {
+			  		margin: -8px 0px 0 55px;
+			  	}
+			  }
+				&.right {
+					right: -50px;
+				  span {
+				  	margin-left:-25%;
+				  	margin: -8px 0 0 15px;
+						vertical-align: top;
+				  }
+				}
+			}
+			.navdots {
+				position: absolute;
+				bottom:auto;
+				margin:0 auto;
+				z-index:1000;
+				width: auto;
+				height: 10px;
+
+				top: 650px;
+				margin: 0 auto;
+				z-index: 1000;
+				width: auto;
+				height: 10px;
+				left: 625px;
+
+				.navdot {
+					display: block;
+					float: left;
+					margin-right: 10px;
+					width: 10px;
+					height: 10px;
+					border-radius: 5px;
+					background-color: #cccccc;
+					&:hover {
+						background-color:#2496fd;
+					}
+					&.active {
+						background-color: #2496fd;
+					}
+				}
+			}
+		}		
+		
+		p.earlybird {
+			@include mp-bold;
+			@include font-size(18px);
+			color: #fff;
+			display:block;
+			margin: 30px auto;
+			width:350px;
+			text-align:center;
+		}
+		ul.l18nav {
+			display: block;
+			float: right;
+			width: 176px;
+			height: auto;
+			//margin: 60px 260px 20px 0;
+			margin: 40px 100px 20px 0;
+			li {
+				//@include clearfix();
+				float: left;
+				width: 80px;
+				height: 80px;
+				border-radius: 40px;
+				border: 1px solid rgba(0,0,0,0);
+				text-align: center;
+				background-color: transparent;
+				position: relative;
+				text-align: center;
+				a {
+					@include mp-bold;
+					@include font-size(23px);
+					color: #fff;
+					margin: 0;
+					padding:0;
+					display: block;
+					position: absolute;
+					width: 72px;
+					height: 72px;
+					top: 3px;
+					left: 3px;
+					border-radius: 36px;
+					line-height: 65px;
+				}
+				&.active a  {
+					background-color: #207bd2;
+				}
+				&.active {
+					border: 1px solid #3e8bbe;
+				}
+				&.inactive a  {
+					background-color: #195da3;
+				}
+				&.inactive {
+					border: 1px solid rgba(0,0,0,0);
+				}
+			}
+		}
+		.hero {
+			margin:0 auto;
+			padding:0;
+			float:none;
+			width: 1280px;
+			height: 800px;
+			background: #555 url(../img/hero-dt-bg.jpg) no-repeat 50% 0;
+			background-size: auto 800px;
+			.panel {
+				margin: 0 0 0 156px;
+				width: 440px;
+				height: 100%;
+				float: left;
+				background-color: rgba(6, 26, 60, .70);
+				text-align: left;
+				position: relative;
+				h1 {
+					display: block;
+					box-sizing: border-box;
+					padding: 100px 0 0 0px;
+					max-width: 500px;
+					margin: 0 0 0 20px;
+					color: #fff;
+					text-transform:uppercase;
+					@include mp-light200;
+					@include font-size(63px);
+				}
+				h5 {
+					position: absolute;
+					width: 100%;
+					color: #fff;
+					line-height: 25px;			
+					top:20px;
+					left: 20px;
+					height: 50px;
+					width: 100%;
+					text-align: left;
+					color: #fff;
+					line-height: 50px;			
+					@include mp-bold;
+					@include font-size(20px);
+					span {
+						color: #febf00;
+						padding: 0 10px;
+					}
+				}	
+			}
+		}
+		&.thanks {
+			.hero {
+				background: #555 url(../img/thanksbg.jpg) no-repeat 50% 0 !important;
+				.panel {
+					&.wide {
+						width:1024px;
+						background-color:transparent;
+						text-align:center;
+						h1 {
+							max-width: 1024px !important;
+						}
+						p.h2, p.h2 a {
+							@include mp-light300;
+							@include font-size(46px);
+						}
+						p.h2 {
+							@include mp-light300;
+							@include font-size(46px);
+							line-height: 1;
+							margin-top: 50px;
+							color: #0caaec;
+							a {
+								color: #6fcff7;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	html.sf #hero .hero {
+		background-image: url(../img/hero-us-dt-bg.jpg);
+	}
+	html.sf #hero .hero.two {
+		background-image: url(../img/herobg2.jpg);
+	}
+	html.sf #hero .hero.three {
+		background-image: url(../img/herobg3.jpg);
+	}
+
+	.container.one {
+			.navdots {
+				bottom: auto;
+				top: 150px;
+				right:25%;
+			}
+		}
+		.container.faq {
+			.pager {
+				overflow:visible;
+				.navdots {
+					bottom: auto;
+					top: -120px;
+					right:25%;
+				}
+			}
+		}
+}
+
+@include respond("max-width: 960px") {
+	#hero {
+	  .hero {
+	    margin-top: 0px;
+	    box-sizing: border-box;
+
+	    margin-top:0px;
+      padding: 0;
+      width: 100%;
+      max-width:968px;
+      
+      float: left;
+      background: #0e2950 url(../img/hero-tablet-bg.png) no-repeat 0 0;
+      background-size: 474px auto;
+	    background-position: 474px 150px;
+      .panel {
+        margin:0;
+        width: 474px;
+        height: 850px;
+        background-color: rgba(6, 26, 60, .50);
+        text-align: center;
+        position: relative;
+
+        h1 {
+					display: block;
+					box-sizing: border-box;
+					padding: 250px 0 0 0;
+					margin: 0 0 0 32px;
+					color: #fff;
+					text-transform:uppercase;
+					@include mp-light200;
+					@include font-size(63px);
+					text-align:left;
+				}
+				h5 {
+					position: absolute;
+					color: #fff;		
+					top:190px;
+					left: 32px;
+					height: 50px;
+					width: 100%;
+					text-align: left;
+					color: #fff;
+					line-height: 50px;			
+					@include mp-bold;
+					@include font-size(20px);
+					span {
+						color: #febf00;
+						padding: 0 10px;
+					}
+				}
+      }
+
+	    
+			ul.l18nav {
+        display: block;
+        float: right;
+        //@include row();
+        @include clearfix();
+        width: 116px;
+        height: auto;
+        margin: 20px 40px 20px 0;
+        li {
+          //@include clearfix();
+          float: left;
+          width: 54px;
+          height: 54px;
+          border-radius: 27px;
+          border: 1px solid rgba(0,0,0,0);
+          text-align: center;
+          background-color: transparent;
+          position: relative;
+          text-align: center;
+          a {
+            @include mp-bold;
+            @include font-size(16px);
+            color: #fff;
+            margin: 0;
+            padding:0;
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 1px;
+            left: 1px;
+            border-radius: 25px;
+            border: 1px solid #8aa5c4;
+            line-height: 47px;
+            background-color: #195da3;
+          }
+          &.active a  {
+            border: 1px solid rgba(0,0,0,0);  
+          }
+          &.active {
+            border: 1px solid #195da3;
+          }
+          &.sf {
+
+          }
+          &.ldn {
+
+          }
+        }
+      }
+		
+	    ul.l18nav {
+	      display: block;
+	      //@include row();
+	      @include clearfix();
+	      width: 116px;
+	      height: auto;
+	      margin: 0px auto 20px;
+	      li {
+	        //@include clearfix();
+	        float: left;
+	        width: 54px;
+	        height: 54px;
+	        border-radius: 27px;
+	        border: 1px solid rgba(0,0,0,0);
+	        text-align: center;
+	        background-color: transparent;
+	        position: relative;
+	        text-align: center;
+	        a {
+	          @include mp-bold;
+	          @include font-size(16px);
+	          color: #fff;
+	          margin: 0;
+	          padding:0;
+	          display: block;
+	          position: absolute;
+	          width: 50px;
+	          height: 50px;
+	          top: 1px;
+	          left: 1px;
+	          border-radius: 25px;
+	          border: 1px solid #8aa5c4;
+	          line-height: 47px;
+	          background-color: #195da3;
+	        }
+	        &.active a  {
+	          border: 1px solid rgba(0,0,0,0);  
+	        }
+	        &.active {
+	          border: 1px solid #195da3;
+	        }
+	        &.sf {
+
+	        }
+	        &.ldn {
+
+	        }
+	      }
+	    }
+
+	  }
+
+	  .pager {
+			  height: 861px;
+				width: 100%;
+				max-width: 960px !important;
+			  overflow: hidden;
+			  position: relative;
+			  margin:0 0 0 0;
+				.pages {
+			    height: auto;
+			    width: auto;
+			    position: absolute;
+			    top:0;
+			    left:0;
+			    .page {
+				    height: auto;
+				    width: auto;
+				    width: 968px;
+				    float: left;
+					}
+				}
+				.navdots {
+					position: absolute;
+					bottom: auto;
+					margin:0 auto;
+					z-index:1000;
+					width: auto;
+					height: 10px;
+
+					top: 750px;
+					margin: 0 auto;
+					z-index: 1000;
+					width: auto;
+					height: 10px;
+					left: auto;
+					right:40px;
+
+					.navdot {
+						display: block;
+						float: left;
+						margin-right: 10px;
+						width: 10px;
+						height: 10px;
+						border-radius: 5px;
+						background-color: #cccccc;
+						&:hover {
+							background-color:#2496fd;
+						}
+						&.active {
+							background-color: #2496fd;
+						}
+					}
+				}	
+			}
+			div.paging {
+		    cursor: pointer;
+		    display: block;
+		    margin: -100px 0 0 0;
+		    position: absolute;
+				@include border-radius(50px);
+				//@include box-shadow(0px 2px 4px #d9d9d9);
+				height: 100px;
+				width: 100px;
+				line-height: 100px;
+				font-size: 80px;
+		    top: 50%;
+
+	    	@include box-shadow(0px 2px 4px rgba(255,255,255,.2));
+	    	background-color: rgba(255,255,255,.2);
+		    
+		    span {
+		    	color: rgba(255,255,255,.5);
+					display: block;
+					@include mp-bold;
+					@include font-size(80px);
+				}
+		    &.left {
+		    	left: -50px;
+			  	span {
+			  		margin: -8px 0px 0 55px;
+			  	}
+			  }
+				&.right {
+					right: -50px;
+				  span {
+				  	margin-left:-25%;
+				  	margin: -8px 0 0 15px;
+						vertical-align: top;
+				  }
+				}
+			}
+
+	}
+	html.sf #hero .hero {
+		//background-image: url(../img/hero-us-dt-bg.jpg);
+		background-size: 474px auto;
+	   background-position: 474px 150px;
+	}
+	html.sf #hero .hero.two {
+		background-image: url(../img/herobg2.jpg);
+		background-size: auto 960px;
+		background-position:50% 0;
+	}
+	html.sf #hero .hero.three {
+		background-image: url(../img/herobg3.jpg);
+		background-size: auto 960px;
+		background-position:50% 0;
+	}
+
+	.container.one {
+			.navdots {
+				bottom: auto;
+				top: 150px;
+				right:25%;
+			}
+		}
+		.container.faq {
+			.pager {
+				overflow:visible;
+				.navdots {
+					bottom: auto;
+					top: -120px;
+					right:25%;
+				}
+			}
+		}
+}
+
+
+@include respond("max-width: 960px") {
+	#hero {
+	  .hero {
+	    margin-top: 0px;
+	    box-sizing: border-box;
+	    margin-top:0px;
+      padding: 0;
+      width: 100%;
+      max-width:960px;
+      width:960px;
+      
+      float: left;
+      background: #0e2950 url(../img/hero-tablet-bg.png) no-repeat 0 0;
+      background-size: 474px auto;
+	    background-position: 474px 150px;
+      .panel {
+        margin:0;
+        width: 474px;
+        height: 450px;
+        background-color: rgba(6, 26, 60, .50);
+        text-align: center;
+        position: relative;
+
+        h1 {
+					display: block;
+					box-sizing: border-box;
+					padding: 250px 0 0 0;
+					margin: 0 0 0 32px;
+					color: #fff;
+					text-transform:uppercase;
+					@include mp-light200;
+					@include font-size(63px);
+					text-align:left;
+				}
+				h5 {
+					position: absolute;
+					color: #fff;		
+					top:190px;
+					left: 32px;
+					height: 50px;
+					width: 100%;
+					text-align: left;
+					color: #fff;
+					line-height: 50px;			
+					@include mp-bold;
+					@include font-size(20px);
+					span {
+						color: #febf00;
+						padding: 0 10px;
+					}
+				}
+      }
+
+	    
+			ul.l18nav {
+        display: block;
+        float: right;
+        @include clearfix();
+        width: 116px;
+        height: auto;
+        margin: 20px 40px 20px 0;
+        li {
+          float: left;
+          width: 54px;
+          height: 54px;
+          border-radius: 27px;
+          border: 1px solid rgba(0,0,0,0);
+          text-align: center;
+          background-color: transparent;
+          position: relative;
+          text-align: center;
+          a {
+            @include mp-bold;
+            @include font-size(16px);
+            color: #fff;
+            margin: 0;
+            padding:0;
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 1px;
+            left: 1px;
+            border-radius: 25px;
+            border: 1px solid #8aa5c4;
+            line-height: 47px;
+            background-color: #195da3;
+          }
+          &.active a  {
+            border: 1px solid rgba(0,0,0,0);  
+          }
+          &.active {
+            border: 1px solid #195da3;
+          }
+          &.sf {
+
+          }
+          &.ldn {
+
+          }
+        }
+      }
+		
+	    ul.l18nav {
+	      display: block;
+	      //@include row();
+	      @include clearfix();
+	      width: 116px;
+	      height: auto;
+	      margin: 0px auto 20px;
+	      li {
+	        //@include clearfix();
+	        float: left;
+	        width: 54px;
+	        height: 54px;
+	        border-radius: 27px;
+	        border: 1px solid rgba(0,0,0,0);
+	        text-align: center;
+	        background-color: transparent;
+	        position: relative;
+	        text-align: center;
+	        a {
+	          @include mp-bold;
+	          @include font-size(16px);
+	          color: #fff;
+	          margin: 0;
+	          padding:0;
+	          display: block;
+	          position: absolute;
+	          width: 50px;
+	          height: 50px;
+	          top: 1px;
+	          left: 1px;
+	          border-radius: 25px;
+	          border: 1px solid #8aa5c4;
+	          line-height: 47px;
+	          background-color: #195da3;
+	        }
+	        &.active a  {
+	          border: 1px solid rgba(0,0,0,0);  
+	        }
+	        &.active {
+	          border: 1px solid #195da3;
+	        }
+	        &.sf {
+
+	        }
+	        &.ldn {
+
+	        }
+	      }
+	    }
+	  }
+	  .pager {
+			  height: 861px;
+				width: 100%;
+				max-width: 768px;
+			  overflow: hidden;
+			  position: relative;
+			  margin:0 0 0 0;
+				.pages {
+			    height: auto;
+			    width: auto;
+			    position: absolute;
+			    top:0;
+			    left:0;
+			    .page {
+				    height: 960px;
+				    width: 960px;
+				    float: left;
+					}
+				}
+				.navdots {
+					position: absolute;
+					bottom: auto;
+					margin:0 auto;
+					z-index:1000;
+					width: auto;
+					height: 10px;
+
+					top: 750px;
+					margin: 0 auto;
+					z-index: 1000;
+					width: auto;
+					height: 10px;
+					left: auto;
+					right:40px;
+
+					top: 820px;
+					margin: 0 0 0 -40px;
+					z-index: 1000;
+					width: auto;
+					height: 10px;
+					left: 50%;
+					right:auto;
+
+					.navdot {
+						display: block;
+						float: left;
+						margin-right: 10px;
+						width: 10px;
+						height: 10px;
+						border-radius: 5px;
+						background-color: #cccccc;
+						&:hover {
+							background-color:#2496fd;
+						}
+						&.active {
+							background-color: #2496fd;
+						}
+					}
+				}	
+			}
+			div.paging {
+		    cursor: pointer;
+		    display: none;
+		    margin: -100px 0 0 0;
+		    position: absolute;
+				@include border-radius(50px);
+				height: 100px;
+				width: 100px;
+				line-height: 100px;
+				font-size: 80px;
+		    top: 50%;
+
+	    	@include box-shadow(0px 2px 4px rgba(255,255,255,.2));
+	    	background-color: rgba(255,255,255,.2);
+		    
+		    span {
+		    	color: rgba(255,255,255,.5);
+					display: block;
+					@include mp-bold;
+					@include font-size(80px);
+				}
+		    &.left {
+		    	left: -50px;
+			  	span {
+			  		margin: -8px 0px 0 55px;
+			  	}
+			  }
+				&.right {
+					right: -50px;
+				  span {
+				  	margin-left:-25%;
+				  	margin: -8px 0 0 15px;
+						vertical-align: top;
+				  }
+				}
+			}
+
+	}
+	html.sf #hero .hero {
+		//background-image: url(../img/hero-us-dt-bg.jpg);
+		background-size: 474px auto;
+	   background-position: 474px 150px;
+	}
+	html.sf #hero .hero.two {
+		background-image: url(../img/herobg2.jpg);
+		background-size: auto 960px;
+		background-position:50% 0;
+	}
+	html.sf #hero .hero.three {
+		background-image: url(../img/herobg3.jpg);
+		background-size: auto 960px;
+		background-position:50% 0;
+	}
+
+	.container.one {
+			.navdots {
+				bottom: auto;
+				top: 150px;
+				right:25%;
+			}
+		}
+		.container.faq {
+			.pager {
+				overflow:visible;
+				.navdots {
+					bottom: auto;
+					top: -120px;
+					right:25%;
+				}
+			}
+		}
+}
+
+
+@include respond("max-width: 768px") {
+	div#hero {
+	  .hero {
+	    padding-top: 100px;
+	    box-sizing: border-box;
+	    height:960px;
+	    margin-top:0px;
+      padding: 0;
+      width: 100%;
+      max-width:480px;
+      
+      float: left;
+      background: #0e2950 url(../img/hero-tablet-bg.png) no-repeat 0 0;
+      background-size: 480px auto;
+	    background-position: 0 0 !important;
+      .panel {
+        margin: 200px 0;
+
+        width: 480px;
+        height: 450px;
+        background-color: rgba(6, 26, 60, .50);
+        text-align: center;
+        position: relative;
+
+        h1 {
+					display: block;
+					box-sizing: border-box;
+					padding: 100px 0 0 0;
+					margin: 0 0 0 32px;
+					color: #fff;
+					text-transform:uppercase;
+					@include mp-light200;
+					@include font-size(63px);
+					text-align:left;
+				}
+				h5 {
+					position: absolute;
+					color: #fff;		
+					top:25px;
+					left: 32px;
+					height: 50px;
+					width: 100%;
+					text-align: left;
+					color: #fff;
+					line-height: 50px;			
+					@include mp-bold;
+					@include font-size(20px);
+					span {
+						color: #febf00;
+						padding: 0 10px;
+					}
+				}
+      }
+		
+	    ul.l18nav {
+	      display: block;
+	      float: none;
+	      @include clearfix();
+	      width: 116px;
+	      height: auto;
+	      margin: 100px auto 20px;
+	      li {
+	        //@include clearfix();
+	        float: left;
+	        width: 54px;
+	        height: 54px;
+	        border-radius: 27px;
+	        border: 1px solid rgba(0,0,0,0);
+	        text-align: center;
+	        background-color: transparent;
+	        position: relative;
+	        text-align: center;
+	        a {
+	          @include mp-bold;
+	          @include font-size(16px);
+	          color: #fff;
+	          margin: 0;
+	          padding:0;
+	          display: block;
+	          position: absolute;
+	          width: 50px;
+	          height: 50px;
+	          top: 1px;
+	          left: 1px;
+	          border-radius: 25px;
+	          border: 1px solid #8aa5c4;
+	          line-height: 47px;
+	          background-color: #195da3;
+	        }
+	        &.active a  {
+	          border: 1px solid rgba(0,0,0,0);  
+	        }
+	        &.active {
+	          border: 1px solid #195da3;
+	        }
+	        &.sf {
+
+	        }
+	        &.ldn {
+
+	        }
+	      }
+	    }
+
+	  }
+
+	  .pager {
+				width: 100%;
+				max-width: auto;
+			  overflow: hidden;
+			  position: relative;
+			  margin:0 0 0 0;
+				.pages {
+			    height: auto;
+			    width: auto;
+			    position: absolute;
+			    top:0;
+			    left:0;
+			    .page {
+				    height: 960px;
+				    width: auto;
+				    width: 480px;
+				    float: left;
+					}
+				}
+				.navdots {
+					position: absolute;
+					bottom: auto;
+					margin:0 auto;
+					z-index:1000;
+					width: auto;
+					height: 10px;
+					text-align:center;
+					top: 820px;
+					margin: 0 0 0 -40px;
+					z-index: 1000;
+					width: auto;
+					height: 10px;
+					left: 50%;
+					right:auto;
+
+					.navdot {
+						display: block;
+						float: left;
+						margin-right: 10px;
+						width: 10px;
+						height: 10px;
+						border-radius: 5px;
+						background-color: #cccccc;
+						&:hover {
+							background-color:#2496fd;
+						}
+						&.active {
+							background-color: #2496fd;
+						}
+					}
+				}	
+			}
+			div.paging {
+
+		    cursor: pointer;
+		    display: block;
+		    display:none !important;
+		    margin: -100px 0 0 0;
+		    position: absolute;
+				@include border-radius(50px);
+				//@include box-shadow(0px 2px 4px #d9d9d9);
+				height: 100px;
+				width: 100px;
+				line-height: 100px;
+				font-size: 80px;
+		    top: 50%;
+
+	    	@include box-shadow(0px 2px 4px rgba(255,255,255,.2));
+	    	background-color: rgba(255,255,255,.2);
+		    
+		    span {
+		    	color: rgba(255,255,255,.5);
+					display: block;
+					@include mp-bold;
+					@include font-size(80px);
+				}
+		    &.left {
+		    	left: -50px;
+			  	span {
+			  		margin: -8px 0px 0 55px;
+			  	}
+			  }
+				&.right {
+					right: -50px;
+				  span {
+				  	margin-left:-25%;
+				  	margin: -8px 0 0 15px;
+						vertical-align: top;
+				  }
+				}
+			}
+
+	}
+	html.sf #hero .hero {
+		//background-image: url(../img/hero-us-dt-bg.jpg);
+		background-size: 474px auto;
+	   background-position: 474px 150px;
+	}
+	html.sf #hero .hero.two {
+		background-image: url(../img/herobg2.jpg);
+		background-size: auto 480px;
+		background-position:50% 0;
+	}
+	html.sf #hero .hero.three {
+		background-image: url(../img/herobg3.jpg);
+		background-size: auto 480px;
+		background-position:50% 0;
+	}
+
+	.container.one {
+			.navdots {
+				bottom: auto;
+				top: 150px;
+				right:25%;
+			}
+		}
+		.container.faq {
+			.pager {
+				overflow:visible;
+				.navdots {
+					bottom: auto;
+					top: -120px;
+					right:25%;
+				}
+			}
+		}
+}

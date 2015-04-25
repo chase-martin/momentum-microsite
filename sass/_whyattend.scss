@@ -1,0 +1,420 @@
+@include respond("min-width: 960px") {
+	body {
+		#container {
+			#main {
+					#why-attend {
+						section {
+						background: #fff url(../img/whyattend-bg.png) no-repeat top center;
+						height: 812px;
+						.container.why-attend {
+							width: 1024px;
+							height: auto;
+							margin: 0 auto 0;
+							p {
+								line-height: 26px !important;
+							}
+							.video {
+								cursor: pointer;
+							}
+							
+							.pager {
+								width: 1024px;
+								div.navdots {
+									top: 50px;
+									left: auto;
+									right: 115px;
+								}
+								.page {
+									height: 812px;
+								}
+							}
+							article {
+								margin: 0 auto 40px;
+								@include row();
+								overflow: hidden;
+								&.two {
+									margin-top: 40px;
+								}
+								h3 {
+									margin-bottom: 20px;
+								}
+								h4 {
+									color: #333;
+									margin-bottom:0;
+									&.add {
+										margin-top:40px;
+									}
+								}
+								.article {
+									@include column(8);
+									margin-left:0;
+									padding-left:0;
+									float:left;
+									h5 a {
+										color: #1a6d9c !important;
+										text-transform: uppercase;
+										@include mp-medium;
+										@include font-size(16px);
+									}
+									h5 {
+										@include mp-medium;
+									}
+									&.full {
+										@include row();
+										margin-left:0;
+										padding-left:0;
+										.group {
+											@include column(6);
+											margin-left:0;
+											width: 48.21875%;
+											&.two {
+												margin-left: 2.5625%;;
+											}
+										}
+									}
+									&.fourth {
+										@include column(8);
+										margin-left:0;
+										padding-right: 20px;
+										float: left;
+										h4 {
+											@include mp-regular;
+										}
+									}
+									.group {
+										float:left;
+										margin-left: 0;
+									}
+								}
+								aside {
+									@include column(4);
+									padding: 40px 20px 0;
+									float: left; 
+									margin-left: 0; 
+									&.last {
+										padding:0;
+										margin-top:-20px;
+									}
+									.img {
+										background: url(../img/whyattend-img-bg.png) no-repeat bottom center;
+										padding-bottom: 5px;
+										margin-top: 40px;
+										&.one {
+											margin-top: 40px;
+										}
+										&.two {
+											margin-top: -40px;
+										}
+									}
+								}
+							}
+							.callouts {
+								@include row();
+								padding-top:20px;
+								background: url(../img/whyattend-sprite.png) no-repeat 20px 20px;
+								min-width:1024px;
+								max-width: 1024px;
+								width: 1024px;
+								margin: 0 auto;
+								padding-left: 20px;
+								padding-right: 20px;
+								margin-left: 0; width: 100%;
+
+								.callout {
+									padding-top: 120px;
+									@include column(3);
+									float: left; 
+									padding-right:20px;
+									h5 {
+										@include mp-bold;
+										@include font-size(20px);
+										text-transform: uppercase;
+										color: #1a3f81;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+	
+@include respond("max-width: 960px") {
+	body {
+		#container {
+			#main {
+					#why-attend {
+						section {
+						background: #fff url(../img/whyattend-bg.png) no-repeat top center;
+						height: 812px;
+						width: 960px;
+						.container.why-attend {
+							width: 960px;
+
+							height: auto;
+							margin: 0 auto 0;
+							p {
+								line-height: 26px !important;
+							}
+							.video {
+								cursor: pointer;
+							}
+							
+							.pager {
+								width: 960px;
+								div.navdots {
+									top: 50px;
+									left: auto;
+									right: 115px;
+								}
+								.page {
+									height: 812px;
+								}
+							}
+							article {
+								margin: 0 auto 40px;
+								@include row();
+								overflow: hidden;
+								width:960px !important;
+								&.two {
+									margin-top: 40px;
+								}
+								h3 {
+									margin-bottom: 20px;
+								}
+								h4 {
+									color: #333;
+									margin-bottom:0;
+									&.add {
+										margin-top:40px;
+									}
+								}
+								.article {
+									@include column(8);
+									margin-left:0;
+									padding-left:0;
+									float: left; margin-left: 0; 
+									width:66% !important;
+									h5 a {
+										color: #1a6d9c !important;
+										text-transform: uppercase;
+										@include mp-medium;
+										@include font-size(16px);
+									}
+									h5 {
+										@include mp-medium;
+									}
+									&.full {
+										@include row();
+										margin-left:0;
+										padding-left:0;
+										.group {
+											@include column(6);
+											margin-left:0;
+											width: 48.21875%;
+											&.two {
+												margin-left: 2.5625%;;
+											}
+										}
+									}
+									&.fourth {
+										@include column(8);
+										margin-left:0;
+										padding-right: 20px;
+										h4 {
+											@include mp-regular;
+										}
+									}
+									.group {
+										float: left; margin-left: 0; width: 100%; 
+									}
+								}
+								aside {
+									@include column(4);
+									width:32% !important;
+
+									padding: 40px 20px 0;
+									float: left; margin-left: 20px; 
+									&.last {
+										padding:0;
+										margin-top:-20px;
+									}
+									.img {
+										background: url(../img/whyattend-img-bg.png) no-repeat bottom center;
+										padding-bottom: 5px;
+										margin-top: 40px;
+										&.one {
+											margin-top: 40px;
+										}
+										&.two {
+											margin-top: -40px;
+										}
+									}
+								}
+							}
+							.callouts {
+								@include row();
+								padding-top:20px;
+								background: url(../img/whyattend-sprite.png) no-repeat 20px 20px;
+								min-width:1024px;
+								max-width: 1024px;
+								width: 1024px;
+								.callout {
+									padding-top: 120px;
+									@include column(3);
+									h5 {
+										@include mp-bold;
+										@include font-size(20px);
+										text-transform: uppercase;
+										color: #1a3f81;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+	
+@include respond("max-width: 768px") {
+	body {
+		#container {
+			#main {
+					#why-attend {
+						section {
+						background: #fff url(../img/whyattend-bg.png) no-repeat top center;
+						height: 812px;
+						width: 480px;
+						.container.why-attend {
+							width: 480px;
+
+							height: auto;
+							margin: 0 auto 0;
+							p {
+								line-height: 26px !important;
+							}
+							.video {
+								cursor: pointer;
+							}
+							
+							.pager {
+								width: 480px;
+								div.navdots {
+									top: auto;
+									bottom: 50px;
+									left: auto;
+									right: 315px;
+								}
+								.page {
+									height: 812px;
+								}
+							}
+							article {
+								margin: 0 auto 40px;
+								@include row();
+								overflow: hidden;
+								width:900px;
+								&.two {
+									margin-top: 40px;
+								}
+								h3 {
+									margin-bottom: 20px;
+								}
+								h4 {
+									color: #333;
+									margin-bottom:0;
+									&.add {
+										margin-top:40px;
+									}
+								}
+								.article {
+									@include column(8);
+									margin-left:0;
+									padding-left:0;
+									float: left; margin-left: 0; width: 100%; 
+									h5 a {
+										color: #1a6d9c !important;
+										text-transform: uppercase;
+										@include mp-medium;
+										@include font-size(16px);
+									}
+									h5 {
+										@include mp-medium;
+									}
+									&.full {
+										@include row();
+										margin-left:0;
+										padding-left:0;
+										.group {
+											@include column(6);
+											margin-left:0;
+											width: 48.21875%;
+											&.two {
+												margin-left: 2.5625%;;
+											}
+										}
+									}
+									&.fourth {
+										@include column(8);
+										margin-left:0;
+										padding-right: 20px;
+										h4 {
+											@include mp-regular;
+										}
+									}
+									.group {
+										float: left; margin-left: 0; width: 100%; 
+									}
+								}
+								aside {
+									@include column(4);
+									padding: 40px 20px 0;
+									float: left; margin-left: 0; width: 100%; 
+									&.last {
+										padding:0;
+										margin-top:-20px;
+									}
+									.img {
+										background: url(../img/whyattend-img-bg.png) no-repeat bottom center;
+										padding-bottom: 5px;
+										margin-top: 40px;
+										display:none;
+										&.one {
+											margin-top: 40px;
+										}
+										&.two {
+											margin-top: -40px;
+										}
+									}
+								}
+							}
+							.callouts {
+								@include row();
+								padding-top:20px;
+								background: url(../img/whyattend-sprite.png) no-repeat 20px 20px;
+								min-width:480px;
+								max-width: 480px;
+								width: 480px;
+								.callout {
+									padding-top: 120px;
+									@include column(3);
+									h5 {
+										@include mp-bold;
+										@include font-size(20px);
+										text-transform: uppercase;
+										color: #1a3f81;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+	

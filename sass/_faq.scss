@@ -1,0 +1,245 @@
+body {
+	#container {
+		#main {
+			#faq {
+				section {
+					background: #fff url(../img/connected-bg.jpg) no-repeat top center;
+					height: 812px;
+					.container {
+						overflow: hidden;
+						width: 1024px;
+						
+
+						article {
+							@include row();
+							min-width:1024px;
+							max-width: 1024px;
+							width: 1024px;
+							height: 100% !important;
+							padding:50px 0 0;
+							overflow: visible;
+							h3 {
+								margin-bottom: 20px;
+							}
+							.article {
+								@include column(7);
+								padding:0;
+								margin:0;
+								&.first {
+									margin-bottom: 100px;
+									padding-right: 40px;
+								}
+								p { 
+									color: #fff;
+									width: 600px;
+								}
+
+								&.form {
+									@include column(11);
+									background-color: rgba(255,255,255,.20);
+									#evform {
+										height:100%;
+										@include row(12);
+										.thankyou {display:none;}
+										&.submit {
+
+											form {display:none;}
+											.thankyou {
+												display:block;
+												margin: 40px 0 0 80px;
+												height:500px;
+												h5{
+													color: #01093b;
+														@include mp-medium;
+														@include font-size(46px);
+														margin-bottom:20px;
+												}
+												p {
+													line-height:1.5;
+												}
+												
+											}
+										}
+									
+										form {
+											width: 80%;
+											margin:0 auto;
+											padding: 40px 40px 120px;
+											position: relative;
+											@include column(12);
+											.row {
+												@include row();
+											}
+											label {
+													@include column(6);
+													display: block;
+													&.area {
+														@include column(12);
+													}
+													h5 {
+														color: #01093b;
+														@include mp-medium;
+														@include font-size(26px);
+													}
+													
+												}
+												input, textarea {
+													border-radius: 4px;
+													box-shadow: inset 1px 1px 5px #888;
+													padding: 10px 5px;
+
+												}
+												input, textarea {
+													display:block;
+													width: 100%;
+													margin-bottom: 30px;
+													@include font-size(18px);
+												}
+												textarea {
+													height: 120px;
+													border: none;
+												}
+												#question-submit {
+													position: absolute;
+													bottom: 60px;
+													left: 60px;
+													right: auto;
+													float: left;
+													height: 45px;
+													a {
+														@include mp-bold;
+														@include font-size(12px);
+														color: #0e346b;
+														display: block;
+														height: 41px;
+														width: 150px;
+														padding: 0;
+														margin:0 auto;
+														border: 1px solid #febf00;
+														span {
+															background-color: #febf00;
+															line-height:33px;
+															height: 33px;
+															margin: 3px;
+															display: block;
+															text-align: center;
+														}
+													}
+												}
+											}
+									}
+								}
+							}
+							
+							&.one aside {
+								@include column(4);
+								.aside-img {
+									max-width: 351px;
+
+								}
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+body {
+	#container {
+		#main {
+			#register {
+					section {
+					height: auto !important;
+					background: #fff url(../img/whyattend-bg.png) no-repeat top center;
+					.container {
+						overflow: hidden;
+						width: 1024px;
+						height: auto;
+						padding: 50px 50px 50px;
+						overflow: visible;
+						
+						.pager {
+							height: auto;
+							.wrap {
+								height: auto;
+								overflow: visible !important;
+								.pages {
+									height: auto;
+								}
+							}
+						}
+						article {
+							@include row(12);
+							min-width:1024px;
+							max-width: 1024px;
+							width: 1024px;
+							height: 100% !important;
+							padding:50px 0 0;
+							overflow: visible;
+							h3 {
+								margin-bottom: 20px;
+							}
+							.article {
+								padding:0;
+								margin:0;
+								p { 
+									color: #4d4d4f;
+								}
+								&.first {
+									@include column(12);
+									padding-right: 40px;
+									padding-left:0;
+									margin-left:0;
+									.text {
+										float: left;
+										width:48%;
+										margin-top: 0;
+
+									}
+									.squares {
+										margin-top: -200px;
+										float:right;
+										width:60%;
+										position: relative;
+									
+										.square {
+											border: 4px solid #ffd600;
+											padding: 15px 10px;
+											float: left;
+											width: 32%;
+											height: 180px;
+											margin-left: 7px;
+											h5 {
+												@include mp-bold;
+												@include font-size(14px);
+												text-transform: uppercase;	
+												line-height:1.25;										}
+											.price {
+												position: absolute;
+												bottom: 10px;
+												@include mp-bold;
+												@include font-size(22px);
+												color: #ffd600;
+												text-align: center;
+											}
+										}
+									}
+								}
+							}
+							
+							&.one aside {
+								@include column(4);
+								.aside-img {
+									max-width: 351px;
+
+								}
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}

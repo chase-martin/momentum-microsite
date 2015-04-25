@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+
+# force static files to root
+RewriteRule ^(.*)/(assets|css|fonts|img|js)/(.*) /$2/$3 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# get original query string and pass it along
+RewriteRule ^(.*)$ index.php?rt=$1&%{QUERY_STRING} [L]
+
+
+</IfModule>
+
+
+<IfModule dummy>
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
+</IfModule>

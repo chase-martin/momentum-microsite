@@ -1,0 +1,60 @@
+{
+    "version": 1,
+    "mappings": {
+
+    },
+    "language": {
+
+        "es": {
+            "content": {
+
+
+            }
+        }
+    },
+
+    "variants": {
+        "ldn" : {
+            "view": {
+                "main": "momentum:layout",
+                "content": "momentum:ldn"
+            }
+        },
+        "registration-complete" : {
+            "view": {
+                "main": "momentum:layout",
+                "content": "momentum:registration-complete"
+            }
+        },
+        "sf" : {
+            "view": {
+                "main": "momentum:layout",
+                "content": "momentum:sf"
+            }
+        }
+    },
+    "default": {
+
+        "content": {
+                "title":"Momentum"
+                },
+
+        "meta": [
+            {
+                "name": "description",
+                "content": "Momentum"
+            }
+        ],
+
+        "view": {
+            "main": "momentum:layout",
+            "content": "momentum:home"
+        }
+    },
+    "schema" : {
+        "strict" : false,
+        "fields" : {}
+
+
+    }
+}

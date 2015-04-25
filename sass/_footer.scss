@@ -1,0 +1,487 @@
+@include respond("min-width: 1024px") {	
+
+	.stripes {
+		div {
+			height: 35px;
+			width:100%;
+		}
+		.rowone {
+			background: #0c649e;
+		}
+		.rowtwo {
+			background: #0c4978;
+		}
+		.rowthree {
+			background: #0c294b;
+		}
+	}
+
+	#footer div.container {
+	  width: auto;
+	  max-width: 1280px;
+	  
+	}
+	#footer  {
+	  padding-left: 170px;
+	  padding-right: 170px;
+	  background: #01093b;
+	  height: 256px;
+	  padding-top: 40px;
+	}
+	#footer h2 {
+	  display:none;
+	}
+	#footer div.content h2 {
+	  display:block;
+	}
+	#footer  a {
+	  color: #FFF;
+	}
+	#footer  #foot-left {
+	  float: left;
+	}
+	#footer  #foot-left ul {
+	  list-style: none;
+	}
+	#footer  #foot-left ul a {
+	  color: #FFF;
+	}
+	#footer  #foot-left #foot-menu {
+	  margin: 0;
+	  padding: 0;
+	}
+	#footer  #foot-left #foot-menu .menu-first {
+	  margin-left: 0;
+	}
+	#footer  #foot-left #foot-menu li {
+	  float: left;
+	  margin: 0 10px;
+	}
+	#footer  #foot-left #foot-menu li a {
+	  display: block;
+	  font-size: 16px;
+	}
+	#footer  #trust {
+	  clear: both;
+	  float: left;
+	  width: 135px;
+	}
+	#footer  #trust img {
+	  max-height: 66px;
+	  margin-right: 10px;
+	}
+	#footer  #address {
+	  float: left;
+	  color: #adaeaf;
+	  font-size: 11px;
+	  line-height: 14px;
+	}
+	#footer  #global-standard {
+	  clear: both;
+	  color: #5C5C5D;
+	  font-size: 10px;
+	  line-height: 13px;
+	  margin: 0;
+	  padding: 8px 0 0;
+	}
+	#footer  {
+		#terms {
+		  font-size: 12px;
+		  float: left;
+			a {
+		  margin: 0 5px;
+			}
+		}
+
+		#foot-right {
+		  float: right;
+		  width: 160px;
+
+			#foot-stores {
+			  float: left;
+				a {
+				  display: block;
+				  margin: 0 0 3px;
+				}
+				img:hover {
+				  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+				  opacity: 0.85;
+				}
+			}
+
+			#social-buttons {
+			  float: left;
+				#fb {
+					margin-top: 4px;
+				  float: left;
+				}
+				#gplus {
+				  float: left;
+				  width: 90px;
+				  margin-left: 10px;
+				}
+				
+				#foot-follow {
+					margin-top:20px;
+					h2.follow-us {
+						@include mp-regular;
+						font-weight: 400;
+					  color: #a8a9aa;
+					  font-size: 18px;
+					  margin: 10px 0 0;
+					  border-bottom: 1px solid #646566;
+					  width: 138px;
+					  display:block;
+					  float:left;
+					}
+				  .social-b {
+					  background: url(../img/fshare-sprite.png) no-repeat;
+					  display: block;
+					  float: left;
+					  height: 37px;
+					  margin: 10px 10px 0 0;
+					  text-indent: -9999px;
+					  width: 37px;
+					}
+					.social-b:hover {
+					  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+					  opacity: 0.85;
+					}
+					.tw {
+					  background-position: -50px 0;
+					  margin-right: 12px;
+					}
+					.linkedin {
+					  background-position: -106px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond("min-width: 960px") {	
+
+	.stripes {
+		div {
+			height: 35px;
+			width:100%;
+		}
+		.rowone {
+			background: #0c649e;
+		}
+		.rowtwo {
+			background: #0c4978;
+		}
+		.rowthree {
+			background: #0c294b;
+		}
+	}
+
+	#footer div.container {
+	  width: auto;
+	  max-width: 1280px;
+	  
+	}
+	#footer  {
+	  padding-left: 170px;
+	  padding-right: 170px;
+	  background: #01093b;
+	  height: 256px;
+	  padding-top: 40px;
+	}
+	#footer h2 {
+	  display:none;
+	}
+	#footer div.content h2 {
+	  display:block;
+	}
+	#footer  a {
+	  color: #FFF;
+	}
+	#footer  #foot-left {
+	  float: left;
+	}
+	#footer  #foot-left ul {
+	  list-style: none;
+	}
+	#footer  #foot-left ul a {
+	  color: #FFF;
+	}
+	#footer  #foot-left #foot-menu {
+	  margin: 0;
+	  padding: 0;
+	}
+	#footer  #foot-left #foot-menu .menu-first {
+	  margin-left: 0;
+	}
+	#footer  #foot-left #foot-menu li {
+	  float: left;
+	  margin: 0 10px;
+	}
+	#footer  #foot-left #foot-menu li a {
+	  display: block;
+	  font-size: 16px;
+	}
+	#footer  #trust {
+	  clear: both;
+	  float: left;
+	  width: 135px;
+	}
+	#footer  #trust img {
+	  max-height: 66px;
+	  margin-right: 10px;
+	}
+	#footer  #address {
+	  float: left;
+	  color: #adaeaf;
+	  font-size: 11px;
+	  line-height: 14px;
+	}
+	#footer  #global-standard {
+	  clear: both;
+	  color: #5C5C5D;
+	  font-size: 10px;
+	  line-height: 13px;
+	  margin: 0;
+	  padding: 8px 0 0;
+	}
+	#footer  {
+		#terms {
+		  font-size: 12px;
+		  float: left;
+			a {
+		  margin: 0 5px;
+			}
+		}
+
+		#foot-right {
+		  float: right;
+		  width: 160px;
+
+			#foot-stores {
+			  float: left;
+				a {
+				  display: block;
+				  margin: 0 0 3px;
+				}
+				img:hover {
+				  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+				  opacity: 0.85;
+				}
+			}
+
+			#social-buttons {
+			  float: left;
+				#fb {
+					margin-top: 4px;
+				  float: left;
+				}
+				#gplus {
+				  float: left;
+				  width: 90px;
+				  margin-left: 10px;
+				}
+				
+				#foot-follow {
+					margin-top:20px;
+					h2.follow-us {
+						@include mp-regular;
+						font-weight: 400;
+					  color: #a8a9aa;
+					  font-size: 18px;
+					  margin: 10px 0 0;
+					  border-bottom: 1px solid #646566;
+					  width: 138px;
+					  display:block;
+					  float:left;
+					}
+				  .social-b {
+					  background: url(../img/fshare-sprite.png) no-repeat;
+					  display: block;
+					  float: left;
+					  height: 37px;
+					  margin: 10px 10px 0 0;
+					  text-indent: -9999px;
+					  width: 37px;
+					}
+					.social-b:hover {
+					  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+					  opacity: 0.85;
+					}
+					.tw {
+					  background-position: -50px 0;
+					  margin-right: 12px;
+					}
+					.linkedin {
+					  background-position: -106px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond("min-width: 480px") {	
+	.stripes {
+		div {
+			height: 35px;
+			width:100%;
+		}
+		.rowone {
+			background: #0c649e;
+		}
+		.rowtwo {
+			background: #0c4978;
+		}
+		.rowthree {
+			background: #0c294b;
+		}
+	}
+
+	#footer div.container {
+	  width: auto;
+	  max-width: 1280px;
+	  
+	}
+	#footer  {
+	  padding-left: 170px;
+	  padding-right: 170px;
+	  background: #01093b;
+	  height: 256px;
+	  padding-top: 40px;
+	}
+	#footer h2 {
+	  display:none;
+	}
+	#footer div.content h2 {
+	  display:block;
+	}
+	#footer  a {
+	  color: #FFF;
+	}
+	#footer  #foot-left {
+	  float: left;
+	}
+	#footer  #foot-left ul {
+	  list-style: none;
+	}
+	#footer  #foot-left ul a {
+	  color: #FFF;
+	}
+	#footer  #foot-left #foot-menu {
+	  margin: 0;
+	  padding: 0;
+	}
+	#footer  #foot-left #foot-menu .menu-first {
+	  margin-left: 0;
+	}
+	#footer  #foot-left #foot-menu li {
+	  float: left;
+	  margin: 0 10px;
+	}
+	#footer  #foot-left #foot-menu li a {
+	  display: block;
+	  font-size: 16px;
+	}
+	#footer  #trust {
+	  clear: both;
+	  float: left;
+	  width: 135px;
+	}
+	#footer  #trust img {
+	  max-height: 66px;
+	  margin-right: 10px;
+	}
+	#footer  #address {
+	  float: left;
+	  color: #adaeaf;
+	  font-size: 11px;
+	  line-height: 14px;
+	}
+	#footer  #global-standard {
+	  clear: both;
+	  color: #5C5C5D;
+	  font-size: 10px;
+	  line-height: 13px;
+	  margin: 0;
+	  padding: 8px 0 0;
+	}
+	#footer  {
+		#terms {
+		  font-size: 12px;
+		  float: left;
+			a {
+		  margin: 0 5px;
+			}
+		}
+
+		#foot-right {
+		  float: right;
+		  width: 160px;
+
+			#foot-stores {
+			  float: left;
+				a {
+				  display: block;
+				  margin: 0 0 3px;
+				}
+				img:hover {
+				  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+				  opacity: 0.85;
+				}
+			}
+
+			#social-buttons {
+			  float: left;
+				#fb {
+					margin-top: 4px;
+				  float: left;
+				}
+				#gplus {
+				  float: left;
+				  width: 90px;
+				  margin-left: 10px;
+				}
+				
+				#foot-follow {
+					margin-top:20px;
+					h2.follow-us {
+						@include mp-regular;
+						font-weight: 400;
+					  color: #a8a9aa;
+					  font-size: 18px;
+					  margin: 10px 0 0;
+					  border-bottom: 1px solid #646566;
+					  width: 138px;
+					  display:block;
+					  float:left;
+					}
+				  .social-b {
+					  background: url(../img/fshare-sprite.png) no-repeat;
+					  display: block;
+					  float: left;
+					  height: 37px;
+					  margin: 10px 10px 0 0;
+					  text-indent: -9999px;
+					  width: 37px;
+					}
+					.social-b:hover {
+					  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+					  opacity: 0.85;
+					}
+					.tw {
+					  background-position: -50px 0;
+					  margin-right: 12px;
+					}
+					.linkedin {
+					  background-position: -106px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+

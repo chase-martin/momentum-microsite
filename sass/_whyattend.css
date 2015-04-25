@@ -1,0 +1,27 @@
+#why-attend {
+  background: #fff;
+  /*
+  article {
+  	h3 {
+  		margin-bottom: 20px;
+  	}
+  	@include row();
+  	.article {
+  		@include column(7);
+  		@include push(1);
+  	}
+  	aside {
+  		@include column(4);
+  		.whyattend-img2 {
+  			background: url(../img/whyattend-img2.jpg) no-repeat 0 0;
+  			width: 351px;
+  			height: 258px;
+  		}
+  	}
+  }*/ }
+  #why-attend .container.why-attend {
+    width: 1024px;
+    height: auto;
+    background: white url(../img/whyattend-bg.png) no-repeat top left; }
+    #why-attend .container.why-attend article {
+      height: 900px; }

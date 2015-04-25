@@ -1,0 +1,709 @@
+
+@include respond("min-width: 768px") {
+	body {
+			max-width: 100%;
+			#container {
+				.registerbtn, #registerbtn {
+					position: absolute;
+					display: block;
+					right: 0;
+					bottom: 170px;
+					left: 0;
+					width:100%;
+					//height:90px;
+					height: 130px;
+					&.thanks {
+						padding-top:50px
+					}
+					a {
+						margin: 30px auto;
+						height: 68px;
+						width:200px;
+						@include mp-bold;
+						color: #0e346b;
+						display: block;
+						padding: 0;
+						border: 1px solid #febf00;
+						span {
+							@include mp-medium;
+							@include font-size(20px);
+							height: 60px;
+							line-height: 60px;
+							background-color: #febf00;
+							margin: 3px;
+							display: block;
+							text-align: center;
+							text-transform: uppercase;
+						}
+					}
+					#floating-registerbtn {
+						bottom: -25px !important;
+						z-index: 1;
+						position: absolute;
+						display: block;
+						right: 0;
+						left: 0;
+						width:100%;
+						height:90px;
+						&.registerbtn {
+							height: 90px !important;
+						}
+						a {
+							margin: 30px auto;
+							height: 68px;
+							width:200px;
+							@include mp-bold;
+							color: #0e346b;
+							display: block;
+							padding: 0;
+							border: 1px solid #febf00;
+							span {
+								@include mp-medium;
+								@include font-size(20px);
+								height: 60px;
+								line-height: 60px;
+								background-color: #febf00;
+								margin: 3px;
+								display: block;
+								text-align: center;
+							}
+						}
+					}
+				}
+				#registerbtn {
+					bottom: 280px;
+				}
+
+				#sharebar {
+					display: none;
+					left:0;
+					bottom: auto;
+					top:140px;
+					width: 56px;
+					height: 250px;
+					margin:0;
+					background-color: rgba(0,0,0,.25);
+				}
+			}
+		}
+
+	#sharebar .share {
+		#share-btn {
+			color: #FFFFFF;
+			margin: 13px;
+			line-height: 18px;
+			padding: 2px 10px 2px 25px;
+			font-size: 15px;
+			font-weight: 400;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			cursor: pointer;
+			position: relative;
+			top:0px;
+			z-index:1000;
+			text-transform: uppercase;
+		}
+		.share:hover .social-btns{
+			cursor: pointer;
+			display: block;
+		}
+		#social-btns {
+			opacity: 0;
+			-webkit-transition: opacity 400ms;
+			padding: 28px 0 5px 13px;
+			height: 134px;
+			width: 139px;
+			position: absolute;
+			top:20px;
+			left:0;
+
+		}
+		.social-btns p {
+			margin: 0 0 2px;
+			max-width: 110px;
+			margin-left: 0;
+		}
+		iframe {
+			border: none;
+			overflow: hidden;
+			width: 90px;
+			height: 21px;
+		}
+	}
+	#share-button {
+		display: none;
+		float: right;
+		position: absolute;
+		top: 20px;
+		right:0;
+		z-index:1000;
+		height:23px;
+		overflow: hidden;
+		width:139px;
+		padding-left:15px;
+	}
+	#sharebar {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left:0;
+		margin-top: -108px;
+		z-index:1000;
+		height:240px;
+		overflow: hidden;
+		width:58px;
+		padding:0px;
+		#share-btn {
+			@include mp-regular;
+			font-size: 12px;
+			//color: #666666;
+			color: #fff;
+			padding: 5px 5px 5px 7px;
+			font-weight: 400;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			cursor: pointer;
+			position: relative;
+			left:0;
+			z-index:1000;
+			text-transform: uppercase;
+			background-color: transparent;
+			margin:0;
+			top:0;
+			left:0;
+		}
+		#social-btns {
+			background-color: transparent;
+			padding:5px 0 0 0px;
+			opacity:1;
+			-webkit-transition: none;
+			height: 134px;
+			width: 58px;
+			position: absolute;
+			top:0px;
+			left:0;
+			p { 
+				display: none !important;
+			}
+			ul {
+				margin:20px 0 0;
+				padding:0;
+				width:100%;
+				list-style-type: none;
+				cursor: pointer;
+				li span {
+					width: 58px;
+					height: 45px;
+					display: inline-block;
+					background: url(../img/share-sprite.png) no-repeat;
+					background-position: 0 0;
+					
+					.share-btn .share-img  {
+						display: inline-block;
+						height: 45px;
+						width: 58px;
+						margin:0 0 2px;
+						position: relative;
+						cursor: pointer;
+					}
+					a  {
+	          border: none;
+						display: inline-block;
+						height: 45px;
+						width: 58px;
+						margin:0 0 2px;
+						position: relative;
+						cursor: pointer;
+					}
+				}
+			}
+			.facebook_share {
+				background-position: 0 0;
+			}
+			.twitter_share {
+				background-position: 0 -45px;
+			}
+			.googleplus_share {
+				background-position: 0 -135px;
+			}
+			.linkedin_share {
+				background-position: 0 -89px;
+			}
+		}
+	}
+}
+
+@include respond("max-width: 960px") {
+	body {
+			max-width: 100%;
+			#container {
+				.registerbtn, #registerbtn {
+					position: absolute;
+					display: block;
+					right: auto;
+					bottom: 70px;
+					bottom: -150px;
+					left: 32px;
+					width:100%;
+					//height:90px;
+					height: 130px;
+					&.thanks {
+						padding-top:50px
+					}
+					a {
+						margin: 30px 0;
+						height: 68px;
+						width:200px;
+						@include mp-bold;
+						color: #0e346b;
+						display: block;
+						padding: 0;
+						border: 1px solid #febf00;
+						span {
+							@include mp-medium;
+							@include font-size(20px);
+							height: 60px;
+							line-height: 60px;
+							background-color: #febf00;
+							margin: 3px;
+							display: block;
+							text-align: center;
+							text-transform: uppercase;
+						}
+					}
+					#floating-registerbtn {
+						bottom: -25px !important;
+						z-index: 1;
+						position: absolute;
+						display: block;
+						right: 0;
+						left: 0;
+						width:100%;
+						height:90px;
+						&.registerbtn {
+							height: 90px !important;
+						}
+						a {
+							margin: 30px auto;
+							height: 68px;
+							width:200px;
+							@include mp-bold;
+							color: #0e346b;
+							display: block;
+							padding: 0;
+							border: 1px solid #febf00;
+							span {
+								@include mp-medium;
+								@include font-size(20px);
+								height: 60px;
+								line-height: 60px;
+								background-color: #febf00;
+								margin: 3px;
+								display: block;
+								text-align: center;
+							}
+						}
+					}
+				}
+				#registerbtn {
+					bottom: 180px;
+					left: 32px;
+				}
+
+				#sharebar {
+					display: none;
+					left:-1000px;
+					bottom: auto;
+					top:140px;
+					width: 56px;
+					height: 250px;
+					margin:0;
+					background-color: rgba(0,0,0,.25);
+				}
+			}
+		}
+
+
+	#sharebar .share {
+		#share-btn {
+			color: #FFFFFF;
+			margin: 13px;
+			line-height: 18px;
+			padding: 2px 10px 2px 25px;
+			font-size: 15px;
+			font-weight: 400;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			cursor: pointer;
+			position: relative;
+			top:0px;
+			z-index:1000;
+			text-transform: uppercase;
+		}
+		.share:hover .social-btns{
+			cursor: pointer;
+			display: block;
+		}
+		#social-btns {
+			opacity: 0;
+			-webkit-transition: opacity 400ms;
+			padding: 28px 0 5px 13px;
+			height: 134px;
+			width: 139px;
+			position: absolute;
+			top:20px;
+			left:0;
+
+		}
+		.social-btns p {
+			margin: 0 0 2px;
+			max-width: 110px;
+			margin-left: 0;
+		}
+		iframe {
+			border: none;
+			overflow: hidden;
+			width: 90px;
+			height: 21px;
+		}
+	}
+	#share-button {
+		display: none;
+		float: right;
+		position: absolute;
+		top: 20px;
+		right:0;
+		z-index:1000;
+		height:23px;
+		overflow: hidden;
+		width:139px;
+		padding-left:15px;
+	}
+	#sharebar {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left:0;
+		margin-top: -108px;
+		z-index:1000;
+		height:240px;
+		overflow: hidden;
+		width:58px;
+		padding:0px;
+		#share-btn {
+			@include mp-regular;
+			font-size: 12px;
+			//color: #666666;
+			color: #fff;
+			padding: 5px 5px 5px 7px;
+			font-weight: 400;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			cursor: pointer;
+			position: relative;
+			left:0;
+			z-index:1000;
+			text-transform: uppercase;
+			background-color: transparent;
+			margin:0;
+			top:0;
+			left:0;
+		}
+		#social-btns {
+			background-color: transparent;
+			padding:5px 0 0 0px;
+			opacity:1;
+			-webkit-transition: none;
+			height: 134px;
+			width: 58px;
+			position: absolute;
+			top:0px;
+			left:0;
+			p { 
+				display: none !important;
+			}
+			ul {
+				margin:20px 0 0;
+				padding:0;
+				width:100%;
+				list-style-type: none;
+				cursor: pointer;
+				li span {
+					width: 58px;
+					height: 45px;
+					display: inline-block;
+					background: url(../img/share-sprite.png) no-repeat;
+					background-position: 0 0;
+					
+					.share-btn .share-img  {
+						display: inline-block;
+						height: 45px;
+						width: 58px;
+						margin:0 0 2px;
+						position: relative;
+						cursor: pointer;
+					}
+					a  {
+	          border: none;
+						display: inline-block;
+						height: 45px;
+						width: 58px;
+						margin:0 0 2px;
+						position: relative;
+						cursor: pointer;
+					}
+				}
+			}
+			.facebook_share {
+				background-position: 0 0;
+			}
+			.twitter_share {
+				background-position: 0 -45px;
+			}
+			.googleplus_share {
+				background-position: 0 -135px;
+			}
+			.linkedin_share {
+				background-position: 0 -89px;
+			}
+		}
+	}
+
+}
+
+@include respond("max-width: 768px") {
+	body {
+			max-width: 100%;
+			#container {
+				.registerbtn, #registerbtn {
+					position: absolute;
+					display: block;
+					right: auto;
+					bottom: -150px;
+					left: 130px;
+					width:100%;
+					//height:90px;
+					height: 130px;
+					&.thanks {
+						padding-top:50px
+					}
+					a {
+						margin: 30px 0;
+						height: 68px;
+						width:200px;
+						@include mp-bold;
+						color: #0e346b;
+						display: block;
+						padding: 0;
+						border: 1px solid #febf00;
+						span {
+							@include mp-medium;
+							@include font-size(20px);
+							height: 60px;
+							line-height: 60px;
+							background-color: #febf00;
+							margin: 3px;
+							display: block;
+							text-align: center;
+							text-transform: uppercase;
+						}
+					}
+					#floating-registerbtn {
+						bottom: -25px !important;
+						z-index: 1;
+						position: absolute;
+						display: block;
+						right: 0;
+						left: 0;
+						width:100%;
+						height:90px;
+						&.registerbtn {
+							height: 90px !important;
+						}
+						a {
+							margin: 30px auto;
+							height: 68px;
+							width:200px;
+							@include mp-bold;
+							color: #0e346b;
+							display: block;
+							padding: 0;
+							border: 1px solid #febf00;
+							span {
+								@include mp-medium;
+								@include font-size(20px);
+								height: 60px;
+								line-height: 60px;
+								background-color: #febf00;
+								margin: 3px;
+								display: block;
+								text-align: center;
+							}
+						}
+					}
+				}
+				#registerbtn {
+					bottom: 180px;
+					left: 32px;
+				}
+
+				#sharebar {
+					display: none;
+					left:-1000px;
+					bottom: auto;
+					top:140px;
+					width: 56px;
+					height: 250px;
+					margin:0;
+					background-color: rgba(0,0,0,.25);
+				}
+			}
+		}
+
+
+	#sharebar .share {
+		#share-btn {
+			color: #FFFFFF;
+			margin: 13px;
+			line-height: 18px;
+			padding: 2px 10px 2px 25px;
+			font-size: 15px;
+			font-weight: 400;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			cursor: pointer;
+			position: relative;
+			top:0px;
+			z-index:1000;
+			text-transform: uppercase;
+		}
+		.share:hover .social-btns{
+			cursor: pointer;
+			display: block;
+		}
+		#social-btns {
+			opacity: 0;
+			-webkit-transition: opacity 400ms;
+			padding: 28px 0 5px 13px;
+			height: 134px;
+			width: 139px;
+			position: absolute;
+			top:20px;
+			left:0;
+
+		}
+		.social-btns p {
+			margin: 0 0 2px;
+			max-width: 110px;
+			margin-left: 0;
+		}
+		iframe {
+			border: none;
+			overflow: hidden;
+			width: 90px;
+			height: 21px;
+		}
+	}
+	#share-button {
+		display: none;
+		float: right;
+		position: absolute;
+		top: 20px;
+		right:0;
+		z-index:1000;
+		height:23px;
+		overflow: hidden;
+		width:139px;
+		padding-left:15px;
+	}
+	#sharebar {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left:0;
+		margin-top: -108px;
+		z-index:1000;
+		height:240px;
+		overflow: hidden;
+		width:58px;
+		padding:0px;
+		#share-btn {
+			@include mp-regular;
+			font-size: 12px;
+			//color: #666666;
+			color: #fff;
+			padding: 5px 5px 5px 7px;
+			font-weight: 400;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			cursor: pointer;
+			position: relative;
+			left:0;
+			z-index:1000;
+			text-transform: uppercase;
+			background-color: transparent;
+			margin:0;
+			top:0;
+			left:0;
+		}
+		#social-btns {
+			background-color: transparent;
+			padding:5px 0 0 0px;
+			opacity:1;
+			-webkit-transition: none;
+			height: 134px;
+			width: 58px;
+			position: absolute;
+			top:0px;
+			left:0;
+			p { 
+				display: none !important;
+			}
+			ul {
+				margin:20px 0 0;
+				padding:0;
+				width:100%;
+				list-style-type: none;
+				cursor: pointer;
+				li span {
+					width: 58px;
+					height: 45px;
+					display: inline-block;
+					background: url(../img/share-sprite.png) no-repeat;
+					background-position: 0 0;
+					
+					.share-btn .share-img  {
+						display: inline-block;
+						height: 45px;
+						width: 58px;
+						margin:0 0 2px;
+						position: relative;
+						cursor: pointer;
+					}
+					a  {
+	          border: none;
+						display: inline-block;
+						height: 45px;
+						width: 58px;
+						margin:0 0 2px;
+						position: relative;
+						cursor: pointer;
+					}
+				}
+			}
+			.facebook_share {
+				background-position: 0 0;
+			}
+			.twitter_share {
+				background-position: 0 -45px;
+			}
+			.googleplus_share {
+				background-position: 0 -135px;
+			}
+			.linkedin_share {
+				background-position: 0 -89px;
+			}
+		}
+	}
+
+}

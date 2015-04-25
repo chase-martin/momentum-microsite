@@ -1,0 +1,145 @@
+::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 7px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+	width: 7px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 7px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+	background-color: #d0d0d0;
+}
+
+body {
+	b {
+		@include mp-bold;
+	}
+	h1, h2, h3, h4, h5 {
+		line-height: 1;
+	}
+	h4 {
+		@include mp-light300;
+	}
+	sup {
+		font-size:50%;
+		vertical-align:super;
+		text-transform: uppercase;
+	}
+
+	#main {
+		section {
+			.container {
+				h2 {
+					@include mp-bold;
+					@include font-size(20px);
+					text-transform: uppercase;
+					margin:0;
+					padding:0;
+					
+					&.dark {
+						color: #1a3f81;
+					}
+					&.light {
+						color: #fff;
+					}
+				}
+				h2:before {
+					content: "//";
+					color: #ffcc3c;
+					margin-right:5px;
+				}
+				h3 {
+					@include mp-light300;
+					@include font-size(46px);
+					color: #0caaec;
+					margin:5px 0 0;
+					padding:0;
+				}
+				div, p, li, span, tr, td {
+					@include mp-regular;
+					@include font-size(20px);
+					font-weight: 200px;
+					line-height: 1.25;
+					&.dark {
+						color: #4d4d4f;
+					}
+					&.light {
+						color: #fff;
+					}
+				}
+				//events
+				.row {
+					@include mp-regular;
+					@include font-size(16px);
+					color: #666666;
+					
+					.time {
+						color: #122441;
+					}
+				}
+				
+
+				.tab {
+					background-color: #122441;
+					a {
+						@include mp-bold;
+						@include font-size(16px);
+						color: #fff;
+					}
+					&.active {
+						background-color: #fff;
+						h5 {
+							@include mp-bold;
+							@include font-size(16px);
+							color: #1a6d9c;
+						}
+					}
+				}
+
+				&.speakers h4 {
+					@include mp-regular;
+					@include font-size(26px);
+					color: #fff;
+					text-transform: uppercase;
+				}
+				&.sponsors h4 {
+					@include mp-regular;
+					@include font-size(20px);
+					color: #144d8f;
+					text-transform: uppercase;
+				}
+
+				&.getconnected {
+					h4 {
+						@include mp-regular;
+						@include font-size(26px);
+						color: #35aee1;
+						text-transform: uppercase;
+					}
+					font-size: 13px;
+						color: #777777;
+						b, a {
+							color: #1b49a0;
+						}
+					&.twitter {
+						h4 {
+							color: #35aee1;
+						}
+					}
+					&.blog {
+						h4 {
+							color: #144d8f;
+						}
+					}
+				}
+
+				&.faq {
+					
+				}
+			}
+		}
+	}
+}

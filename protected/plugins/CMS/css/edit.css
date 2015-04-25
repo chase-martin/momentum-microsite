@@ -1,0 +1,75 @@
+
+.cmsEditBlock {
+    font-family: "Lucida Grande", "Verdana", sans-serif;
+    font-size: 12px;
+    background: #fff;
+    z-index : 10000000;
+    padding :20px;
+    position: absolute;
+    }
+
+.cmsEditBlock a{
+    color: #000;
+    }
+
+.cmsEditBlock a:hover{
+    text-decoration: none;
+    }
+
+.cmsEditBlock p{
+    margin: 30px 0 10px 0;
+    }
+
+.cmsEditBlock h1{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    }
+
+.cmsEditBlock h2{
+    font-size: 20px;
+    }
+
+
+
+  .editHover{
+    background-color: #E8F3FF;
+    }
+
+ .cmsEditBlock{
+    width: 326px;
+    min-height: 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 2px solid #E8F3FF;
+    }
+
+.cmsEditBlock ul{
+    list-style: none;
+    }
+
+.cmsEditBlock li{
+    width: 330px;
+    min-height: 20px;
+    padding: 10px 15px;
+    margin: 5px;
+    }
+
+.cmsEditBlock li.noPad{
+    padding: 0;
+    width: 360px;
+    }
+
+.cmsEditBlock textarea{
+    width: 90%;
+
+    }
+
+.cmsEditBlock .btnSave,.cmsEditBlock  .btnCancel{
+    padding: 6px 30px 6px 75px;
+    }
+
+.cmsEditBlock .block{
+    float: left;
+    margin: 20px 0;
+    }
